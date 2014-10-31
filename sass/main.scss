@@ -64,10 +64,10 @@ body{
         &>div{
             margin: 0 0 20px;
             // padding: 20px 5.8824%; /*20/340*/
-            background-color:#EEEEEE;
+            // background-color:#EEEEEE;
         }
         #all-work{
-            background-color: blue;
+            // background-color: blue;
             display: flex;
             flex-flow: row wrap;
             // flex-direction: row;
@@ -91,16 +91,35 @@ body{
         }
     }
     footer{
-        padding: 20px 5.8824%; /*20/340*/
+        padding: 3%; /*20/340*/
         background: -webkit-linear-gradient(#333333, black); /* For Safari 5.1 to 6.0 */
         background: -o-linear-gradient(#333333, black); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(#333333, black); /* For Firefox 3.6 to 15 */
         background: linear-gradient(#333333, black); /* Standard syntax */
         background-color: #333333;
         color: white;
-        text-align: right;
+        img{
+            width: 10%;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            &:last-child{
+                display: block;
+            }
+        }
+        p{
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            font-size: 12px;
+        }
         a{
             color: white;
+            text-align: right;
+            display: inline-block;
+            position: relative;
+            font-size: 12px;
+            margin-left: 10%;
         }
     }
 }

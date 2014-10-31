@@ -117,13 +117,13 @@ nav ul {
     line-height: 2;
     font-weight: bold; }
     nav ul li:hover, nav ul li.selected, nav ul a:hover, nav ul a.selected {
-      background: -webkit-linear-gradient(#333333, black);
+      background: -webkit-linear-gradient(black, #333333);
       /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#333333, black);
+      background: -o-linear-gradient(black, #333333);
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#333333, black);
+      background: -moz-linear-gradient(black, #333333);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#333333, black);
+      background: linear-gradient(black, #333333);
       /* Standard syntax */
       background-color: #333333;
       color: white; }
@@ -156,10 +156,8 @@ body {
       padding: 0 5.8824%;
       /*20/340*/ }
     body main > div {
-      margin: 0 0 20px;
-      background-color: #EEEEEE; }
+      margin: 0 0 20px; }
     body main #all-work {
-      background-color: blue;
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
@@ -174,7 +172,7 @@ body {
     body main #about img {
       width: 100%; }
   body footer {
-    padding: 20px 5.8824%;
+    padding: 3%;
     /*20/340*/
     background: -webkit-linear-gradient(#333333, black);
     /* For Safari 5.1 to 6.0 */
@@ -185,10 +183,26 @@ body {
     background: linear-gradient(#333333, black);
     /* Standard syntax */
     background-color: #333333;
-    color: white;
-    text-align: right; }
+    color: white; }
+    body footer img {
+      width: 10%;
+      text-align: left;
+      margin: 0;
+      padding: 0; }
+      body footer img:last-child {
+        display: block; }
+    body footer p {
+      text-align: center;
+      display: inline-block;
+      position: relative;
+      font-size: 12px; }
     body footer a {
-      color: white; }
+      color: white;
+      text-align: right;
+      display: inline-block;
+      position: relative;
+      font-size: 12px;
+      margin-left: 10%; }
 
 /* ==========================================================================
    Media Query for Tablet Layout.
