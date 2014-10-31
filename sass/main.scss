@@ -1,0 +1,281 @@
+ /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@import "defaults";
+
+/* ==========================================================================
+   Author's custom styles
+   Default Desktop First Styles
+   ========================================================================== */
+
+$color-default: #333333;
+$color-main-nav: lighten($color-default, 10%);
+$color-contrast: #FFFFFF;
+$color-bg: #EEEEEE;
+$color-accent: #FF6600;
+$font-default: 'Lora', Georgia, serif;
+$font-heading:'Bitter', serif;
+$fonts: ('Lora', Georgia, serif), ('Bitter', serif);
+$font-sizes: 3rem, 2.25rem, 1.75rem, 1rem;
+$line-heights: 1.05em, 1.25em, 1.25em, 1.375em;
+$typo-scale:
+    (h1:(3rem, 1.05em),
+    h2:(2.25rem, 1.25em),
+    h3:(1.75rem, 1.25em),
+    p:(1rem, 1.375em)
+    );
+
+@mixin list-reset(){
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin color-settings ($color:$color-default, $bg-color:$color-bg){
+    color: $color;
+    background-color: $bg-color;
+}
+
+@mixin font-settings($size, $line-height) {
+    font-size: $size;
+    line-height: $line-height;
+}
+
+body{
+    font-family: $font-default;
+    background: url('../img/bg_1.gif')$color-bg;
+    margin:0 0 40px 0;
+}
+
+//Functions
+
+@function fluid-percent($target, $context){
+
+    @return $target/$context*100%;
+
+}
+
+//Typography 
+
+%h{
+    font-family:  $font-heading;;
+}
+
+@each $element, $values in $typo-scale{
+
+    #{$element}{
+        @if $element!= p{
+            @extend %h;
+        } @else {
+            margin:1.375em 0;
+        }
+
+    @include font-settings($values...);
+    
+    }
+
+}
+// h1,h2,h3, nav a{
+//     font-family: $font-heading;
+// }
+h1{
+    @extend %h;
+    @include font-settings(map-get($typo-scale, h1)...);
+    
+}
+
+h2{
+    @extend %h;
+    @include font-settings(nth($font-sizes, 2),nth($line-heights, 2));
+}
+h3{
+    @extend %h;
+    @include font-settings(nth($font-sizes, 3),nth($line-heights, 3));
+}
+p{
+    @extend %h;
+    @include font-settings(nth($font-sizes, 4),nth($line-heights, 4));
+    margin:1.375em 0;
+}
+
+//Wrapper
+
+.wrapper{
+    width:98%;
+    max-width:1280px;
+    margin:0 auto;
+}
+
+//Wrapper
+
+header{
+    padding-top:20px;
+    @include color-settings($color-contrast, $color-default);
+    h1{
+        margin: 0 fluid-percent(20, 980);
+    }
+    nav{
+        ul{
+            @include list-reset();
+            border: 2px solid $color-main-nav; 
+        }
+        li{
+            @include list-reset();
+            display:block;
+            width:25%;
+            float:left;
+        }
+        a{
+            @extend %h;
+            display:block;
+            @include color-settings($color-default, $color-contrast);
+            @include list-reset();
+            text-align: center;
+            font-size:1.15rem;//24px/16px
+            line-height: 2;
+            font-weight:bold;
+            border: 2px solid $color-main-nav;
+            &:hover, &.selected{
+                @include color-settings($color-contrast, $color-default);
+            }
+                
+        }
+    }
+}
+
+
+
+//Main Nav
+
+
+
+//Main Styles
+
+%button{
+    @extend %h;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0;
+    @include color-settings($color-contrast, $color-main-nav);
+    @include font-settings(20px, 35px);
+    &:hover{
+        background-color: darken($color-main-nav, 10%);
+    }
+}
+
+main{
+    padding: 10px 1.02%; //10/980
+    background-color: $color-contrast;
+    h2{
+        padding:0px 1.04166666%; //10/960
+    }
+    .content{
+        padding-bottom:10px;
+    }
+    figure{
+        width:29.16666%; //280/960
+        margin: 10px 1.04166666%; //10/960
+        padding:10px 1.04166666%; //10/960
+        background-color: $color-bg;
+        float:left;
+        img{
+            width:100%;
+        }
+        .button{
+            @extend %button;
+            float: right;
+            width: 150px;
+            @include color-settings($color-contrast, $color-accent);
+            &:hover{
+                background-color: invert($color-accent);
+            }
+        };
+    }
+    .button{
+        @extend %button;
+        width: 200px;
+        &#prev{
+            float: left;
+            margin-left: fluid-percent(10,980);
+        }
+        &#next{
+            float: right;
+            margin-right: fluid-percent(10,980);
+        }
+    }
+}
+
+
+
+   
+
+
+
+//Footer Styles
+
+footer{
+    padding: 20px 2.04081%; //20/980
+    @include color-settings($color-contrast, $color-default);
+    text-align: center;
+}
+ 
+footer nav li{
+    display: inline;
+    border-right: 2px solid $color-contrast;
+    padding: 0 10px;
+}
+
+footer nav a{
+    color:white;
+    text-decoration: none;
+}
+
+footer nav a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   Media Query for Tablet Layout.
+   ========================================================================== */
+
+@media only screen and (max-width: 1000px) {
+
+
+}
+
+/* ==========================================================================
+   Media Query for Mobile.
+   ========================================================================== */
+
+@media only screen and (max-width: 700px) {
+
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+@import "helper";
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+
+
+@import "print";
