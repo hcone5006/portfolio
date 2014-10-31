@@ -86,192 +86,206 @@ textarea {
 
 /* ==========================================================================
    Author's custom styles
-   Default Desktop First Styles
+   Default Mobile First Styles
    ========================================================================== */
-body {
-  font-family: "Lora", Georgia, serif;
-  background: url("../img/bg_1.gif") #eeeeee;
-  margin: 0 0 40px 0;
-}
-
-h1, h2, h3, p, header nav a, main figure .button, main .button {
-  font-family: "Bitter", serif;
-}
-
 h1 {
-  font-size: 3rem;
-  line-height: 1.05em;
+  font-family: 'Lobster Two', cursive;
+  font-size: 40px;
 }
 
-h2 {
-  font-size: 2.25rem;
-  line-height: 1.25em;
+h2, h3, nav a, li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
 }
 
-h3 {
-  font-size: 1.75rem;
-  line-height: 1.25em;
+h2, h3 {
+  margin: 3%;
 }
 
 p {
-  margin: 1.375em 0;
-  font-size: 1rem;
-  line-height: 1.375em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: light;
+  margin: 3%;
 }
 
-h1 {
-  font-size: 3rem;
-  line-height: 1.05em;
-}
-
-h2 {
-  font-size: 2.25rem;
-  line-height: 1.25em;
-}
-
-h3 {
-  font-size: 1.75rem;
-  line-height: 1.25em;
-}
-
-p {
-  font-size: 1rem;
-  line-height: 1.375em;
-  margin: 1.375em 0;
-}
-
-.wrapper {
-  width: 98%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-header {
-  padding-top: 20px;
-  color: white;
-  background-color: #333333;
-}
-header h1 {
-  margin: 0 2.04082%;
-}
-header nav ul {
+nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
-  border: 2px solid #4d4d4d;
+  padding: 0;
+  background-color: red;
 }
-header nav li {
+nav ul li, nav ul a {
   list-style: none;
-  padding: 0;
+  display: block;
   margin: 0;
+  padding: 0;
+  border: 1px solid #333333;
+  border-top: none;
   display: block;
-  width: 25%;
-  float: left;
-}
-header nav a {
-  display: block;
-  color: #333333;
   background-color: white;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  color: #333333;
+  text-decoration: none;
   text-align: center;
-  font-size: 1.15rem;
+  font-size: 24px;
   line-height: 2;
   font-weight: bold;
-  border: 2px solid #4d4d4d;
 }
-header nav a:hover, header nav a.selected {
-  color: white;
+nav ul li:hover, nav ul li.selected, nav ul a:hover, nav ul a.selected {
+  background: -webkit-linear-gradient(#333333, black);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#333333, black);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#333333, black);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#333333, black);
+  /* Standard syntax */
   background-color: #333333;
+  color: white;
+}
+nav ul li:last-child, nav ul a:last-child {
+  border-bottom: 1px solid #333333;
 }
 
-main figure .button, main .button {
-  width: 100px;
-  height: 35px;
-  border-radius: 5px;
-  text-align: center;
-  cursor: pointer;
-  margin: 10px 0;
-  color: white;
-  background-color: #4d4d4d;
-  font-size: 20px;
-  line-height: 35px;
+body {
+  background-color: #DDDDDD;
+  margin: 0;
 }
-main .button:hover {
+body header {
+  padding: 3%;
+  /*20/340*/
+  background: -webkit-linear-gradient(#333333, black);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#333333, black);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#333333, black);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#333333, black);
+  /* Standard syntax */
   background-color: #333333;
+  color: white;
 }
-
-main {
-  padding: 10px 1.02%;
+body header h1 {
+  padding: 0;
+  margin: 0;
+}
+body main {
+  padding: 0;
   background-color: white;
 }
-main h2 {
-  padding: 0px 1.04166666%;
+body main h2 {
+  padding: 0 5.8824%;
+  /*20/340*/
 }
-main .content {
-  padding-bottom: 10px;
+body main > div {
+  margin: 0 0 20px;
+  background-color: #EEEEEE;
 }
-main figure {
-  width: 29.16666%;
-  margin: 10px 1.04166666%;
-  padding: 10px 1.04166666%;
-  background-color: #eeeeee;
-  float: left;
+body main #all-work {
+  background-color: blue;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
-main figure img {
+body main #all-work img {
+  width: 49.31%;
+  padding: 0;
+  margin: 0 auto;
+  display: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+body main #about img {
   width: 100%;
 }
-main figure .button {
-  float: right;
-  width: 150px;
-  color: white;
-  background-color: #ff6600;
-}
-main figure .button:hover {
-  background-color: #0099ff;
-}
-main .button {
-  width: 200px;
-}
-main .button#prev {
-  float: left;
-  margin-left: 1.02041%;
-}
-main .button#next {
-  float: right;
-  margin-right: 1.02041%;
-}
-
-footer {
-  padding: 20px 2.04081%;
-  color: white;
+body footer {
+  padding: 20px 5.8824%;
+  /*20/340*/
+  background: -webkit-linear-gradient(#333333, black);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#333333, black);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#333333, black);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#333333, black);
+  /* Standard syntax */
   background-color: #333333;
-  text-align: center;
-}
-
-footer nav li {
-  display: inline;
-  border-right: 2px solid white;
-  padding: 0 10px;
-}
-
-footer nav a {
   color: white;
-  text-decoration: none;
+  text-align: right;
 }
-
-footer nav a:hover {
+body footer a {
   color: white;
-  text-decoration: underline;
 }
 
 /* ==========================================================================
    Media Query for Tablet Layout.
    ========================================================================== */
+@media only screen and (min-width: 700px) {
+  header {
+    padding: 20px 3.03030303%;
+    /*20/660*/
+  }
+
+  body .wrapper nav ul li {
+    display: inline-block;
+  }
+  body main {
+    padding: 10px 1.515151%;
+    /*10/660*/
+  }
+  body main h2 {
+    padding: 0 1.5625%;
+    /*10/640*/
+  }
+  body main #all-work img {
+    width: 33.3%;
+  }
+  body main #about {
+    width: 100%;
+  }
+  body main #about img {
+    width: 50%;
+  }
+  body main #about p {
+    width: 50%;
+  }
+  body footer {
+    padding: 20px 3.03030303%;
+    /*20/660*/
+  }
+}
 /* ==========================================================================
-   Media Query for Mobile.
+   Media Query for Desktop.
    ========================================================================== */
+@media only screen and (min-width: 1000px) {
+  header {
+    padding: 20px 2.04081%;
+    /*20/980*/
+  }
+
+  .wrapper {
+    width: 98%;
+    max-width: 1400px;
+  }
+
+  main {
+    padding: 10px 1.02%;
+    /*10/980*/
+  }
+
+  main > div {
+    margin: 10px 1.04166666%;
+    /*10/960*/
+    padding: 10px 1.04166666%;
+    /*10/960*/
+  }
+
+  footer {
+    padding: 20px 2.04081%;
+    /*20/980*/
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

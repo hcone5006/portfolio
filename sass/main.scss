@@ -1,4 +1,4 @@
- /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -10,258 +10,180 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-@import "defaults";
+@import "default";
 
 /* ==========================================================================
    Author's custom styles
-   Default Desktop First Styles
+   Default Mobile First Styles
    ========================================================================== */
-
-$color-default: #333333;
-$color-main-nav: lighten($color-default, 10%);
-$color-contrast: #FFFFFF;
-$color-bg: #EEEEEE;
-$color-accent: #FF6600;
-$font-default: 'Lora', Georgia, serif;
-$font-heading:'Bitter', serif;
-$fonts: ('Lora', Georgia, serif), ('Bitter', serif);
-$font-sizes: 3rem, 2.25rem, 1.75rem, 1rem;
-$line-heights: 1.05em, 1.25em, 1.25em, 1.375em;
-$typo-scale:
-    (h1:(3rem, 1.05em),
-    h2:(2.25rem, 1.25em),
-    h3:(1.75rem, 1.25em),
-    p:(1rem, 1.375em)
-    );
-
-@mixin list-reset(){
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-@mixin color-settings ($color:$color-default, $bg-color:$color-bg){
-    color: $color;
-    background-color: $bg-color;
-}
-
-@mixin font-settings($size, $line-height) {
-    font-size: $size;
-    line-height: $line-height;
-}
-
-body{
-    font-family: $font-default;
-    background: url('../img/bg_1.gif')$color-bg;
-    margin:0 0 40px 0;
-}
-
-//Functions
-
-@function fluid-percent($target, $context){
-
-    @return $target/$context*100%;
-
-}
-
-//Typography 
-
-%h{
-    font-family:  $font-heading;;
-}
-
-@each $element, $values in $typo-scale{
-
-    #{$element}{
-        @if $element!= p{
-            @extend %h;
-        } @else {
-            margin:1.375em 0;
-        }
-
-    @include font-settings($values...);
-    
-    }
-
-}
-// h1,h2,h3, nav a{
-//     font-family: $font-heading;
-// }
+// font styles
 h1{
-    @extend %h;
-    @include font-settings(map-get($typo-scale, h1)...);
-    
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
 }
-
-h2{
-    @extend %h;
-    @include font-settings(nth($font-sizes, 2),nth($line-heights, 2));
+h2,h3, nav a, li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
 }
-h3{
-    @extend %h;
-    @include font-settings(nth($font-sizes, 3),nth($line-heights, 3));
+h2, h3{
+    margin: 3%;
 }
 p{
-    @extend %h;
-    @include font-settings(nth($font-sizes, 4),nth($line-heights, 4));
-    margin:1.375em 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: light;
+    margin: 3%;
 }
 
-//Wrapper
+//nav styling
+@import "nav";
 
-.wrapper{
-    width:98%;
-    max-width:1280px;
-    margin:0 auto;
-}
-
-//Wrapper
-
-header{
-    padding-top:20px;
-    @include color-settings($color-contrast, $color-default);
-    h1{
-        margin: 0 fluid-percent(20, 980);
+//main styling
+body{
+    background-color: #DDDDDD;
+    margin:0;
+    header{
+        padding: 3%; /*20/340*/
+        background: -webkit-linear-gradient(#333333, black); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#333333, black); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#333333, black); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#333333, black); /* Standard syntax */
+        background-color: #333333;
+        color: white;
+        h1{
+            padding: 0;
+            margin: 0;
+        }
     }
-    nav{
-        ul{
-            @include list-reset();
-            border: 2px solid $color-main-nav; 
+    main{
+        padding: 0;
+        background-color: white;
+        h2{
+            padding:0 5.8824%; /*20/340*/
         }
-        li{
-            @include list-reset();
-            display:block;
-            width:25%;
-            float:left;
+        &>div{
+            margin: 0 0 20px;
+            // padding: 20px 5.8824%; /*20/340*/
+            background-color:#EEEEEE;
         }
+        #all-work{
+            background-color: blue;
+            display: flex;
+            flex-flow: row wrap;
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 49.31%;
+                // flex-basis: 49%;
+                padding: 0;
+                margin: 0 auto;
+                display: none;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+        }
+        #about{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    footer{
+        padding: 20px 5.8824%; /*20/340*/
+        background: -webkit-linear-gradient(#333333, black); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#333333, black); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#333333, black); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#333333, black); /* Standard syntax */
+        background-color: #333333;
+        color: white;
+        text-align: right;
         a{
-            @extend %h;
-            display:block;
-            @include color-settings($color-default, $color-contrast);
-            @include list-reset();
-            text-align: center;
-            font-size:1.15rem;//24px/16px
-            line-height: 2;
-            font-weight:bold;
-            border: 2px solid $color-main-nav;
-            &:hover, &.selected{
-                @include color-settings($color-contrast, $color-default);
-            }
-                
+            color: white;
         }
     }
 }
 
-
-
-//Main Nav
-
-
-
-//Main Styles
-
-%button{
-    @extend %h;
-    width: 100px;
-    height: 35px;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    margin: 10px 0;
-    @include color-settings($color-contrast, $color-main-nav);
-    @include font-settings(20px, 35px);
-    &:hover{
-        background-color: darken($color-main-nav, 10%);
-    }
-}
-
-main{
-    padding: 10px 1.02%; //10/980
-    background-color: $color-contrast;
-    h2{
-        padding:0px 1.04166666%; //10/960
-    }
-    .content{
-        padding-bottom:10px;
-    }
-    figure{
-        width:29.16666%; //280/960
-        margin: 10px 1.04166666%; //10/960
-        padding:10px 1.04166666%; //10/960
-        background-color: $color-bg;
-        float:left;
-        img{
-            width:100%;
-        }
-        .button{
-            @extend %button;
-            float: right;
-            width: 150px;
-            @include color-settings($color-contrast, $color-accent);
-            &:hover{
-                background-color: invert($color-accent);
-            }
-        };
-    }
-    .button{
-        @extend %button;
-        width: 200px;
-        &#prev{
-            float: left;
-            margin-left: fluid-percent(10,980);
-        }
-        &#next{
-            float: right;
-            margin-right: fluid-percent(10,980);
-        }
-    }
-}
-
-
-
-   
-
-
-
-//Footer Styles
-
-footer{
-    padding: 20px 2.04081%; //20/980
-    @include color-settings($color-contrast, $color-default);
-    text-align: center;
-}
- 
-footer nav li{
-    display: inline;
-    border-right: 2px solid $color-contrast;
-    padding: 0 10px;
-}
-
-footer nav a{
-    color:white;
-    text-decoration: none;
-}
-
-footer nav a:hover{
-    color:white;
-    text-decoration: underline;
-}
 
 /* ==========================================================================
    Media Query for Tablet Layout.
    ========================================================================== */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 700px) {
 
+    header{
+        padding: 20px 3.03030303%; /*20/660*/
+    }
+    body{
+        .wrapper{
+            nav{
+                    ul{
+                        li{
+                        display: inline-block;
+                        }
+                    }
+                }
+            }
+        main{
+            padding: 10px 1.515151%; /*10/660*/
+            h2{
+                padding:0 1.5625%; /*10/640*/
+            }
+            
+            #all-work{
+                img{
+                    width: 33.3%;
+                }
+            }
+            #about{
+                width: 100%;
+                img{
+                    width: 50%;
+                }
+                p{
+                    width: 50%;
+                }
+                // margin: 10px 1.5625%; /*10/640*/
+                // padding:10px 1.5625%; /*10/640*/
+                // width: 50%; /*280/640*/
+            }
+        }
 
+        footer{
+             padding: 20px 3.03030303%; /*20/660*/
+        }
+    }
 }
 
 /* ==========================================================================
-   Media Query for Mobile.
+   Media Query for Desktop.
    ========================================================================== */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 1000px) {
 
+    header{
+        padding: 20px 2.04081%; /*20/980*/
+    }
+
+    .wrapper{
+        width:98%;
+        max-width:1400px;
+    }
+
+    main{
+        padding: 10px 1.02%; /*10/980*/
+    }
+
+    main>div{
+        // width:29.16666%; /*280/960*/
+        margin: 10px 1.04166666%; /*10/960*/
+        padding:10px 1.04166666%; /*10/960*/
+    }
+
+     footer{
+        padding: 20px 2.04081%; /*20/980*/
+    }
 
 }
 
@@ -269,6 +191,7 @@ footer nav a:hover{
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 @import "helper";
 
 /* ==========================================================================
@@ -276,6 +199,4 @@ footer nav a:hover{
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
-
-
-@import "print";
+@import "print"

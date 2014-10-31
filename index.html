@@ -1,142 +1,64 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
-        <title>Sass Example</title>
+        <title>Heidi Cone Portfolio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lobster+Two|Open+Sans:400,300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
     
         <div class="wrapper">
-            <header>
-                <h1>Sass Working Example</h1>
-
-                <nav>
-                  <ul class="clearfix">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#" class="selected">Banksy</a></li>
-                    <li><a href="#">Picasso</a></li>
-                    <li><a href="#">Matisse</a></li>
-                  </ul>
-                </nav>
-
+            <header id="home">
+                <h1>Heidi Cone</h1>
             </header>
-
+            <nav>
+                <ul>
+                  <li class="filter" data-filter="all">All</li>
+                  <li class="filter" data-filter=".design">Design</li>
+                  <li class="filter" data-filter=".teach">Educate</li>
+                  <li class="filter" data-filter=".art">Create</li>
+                  <li><a href="#about">About</a></li>
+                </ul>
+              </nav>
             <main class="clearfix">
 
-                <h2>Banksy Gallery</h2>
-
-                <section class="content clearfix">
-
-                  <figure>
-                    <img src="img/image_1.jpg" alt="">
-                    <figcaption>
-                      <h3>Lorem Ipsum</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
-                    </figcaption>
-                    <div class="button">Read more...</div>
-                  </figure>
-
-                  <figure>
-                    <img src="img/image_2.jpg" alt="">
-                    <figcaption>
-                      <h3>In Convallis</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
-                    </figcaption>
-                    <div class="button">Read more...</div>
-                  </figure>
-
-                  <figure>
-                    <img src="img/image_3.jpg" alt="">
-                    <figcaption>
-                      <h3>Dolor Sit Amet</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
-                    </figcaption>
-                    <div class="button">Read more...</div>
-                  </figure>
-
-                  <figure>
-                    <img src="img/image_4.jpg" alt="">
-                    <figcaption>
-                      <h3>Consectetur</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
-                    </figcaption>
-                    <div class="button">Read more...</div>
-                  </figure>
-
-                  <figure>
-                    <img src="img/image_5.jpg" alt="">
-                    <figcaption>
-                      <h3>Vivamus Vehicula</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
-                    </figcaption>
-                    <div class="button">Read more...</div>
-                  </figure>
-
-                  <figure>
-                    <img src="img/image_6.jpg" alt="">
-                    <figcaption>
-                      <h3>Tellus Vitae</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
-                    </figcaption>
-                    <div class="button">Read more...</div>
-                  </figure>
-
-                  <figure>
-                    <img src="img/image_7.jpg" alt="">
-                    <figcaption>
-                      <h3>Cras Sit Amet</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
-                    </figcaption>
-                    <div class="button">Read more...</div>
-                  </figure>
-
-                  <figure>
-                    <img src="img/image_8.jpg" alt="">
-                    <figcaption>
-                      <h3>Dictum Massa</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
-                    </figcaption>
-                    <div class="button">Read more...</div>
-                  </figure>
-
-                  <figure>
-                    <img src="img/image_9.jpg" alt="">
-                    <figcaption>
-                      <h3>Aenean Posuere</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
-                      <div class="button">Read more...</div>
-                    </figcaption>
-                  </figure>                  
-
-                </section>
-
-                <div class="button" id="prev">&#10094; Previous Artist</div>
-
-
-                <div class="button" id="next">Next Artist &#10095;</div>
-
+              <container id="all-work" class="clearfix">
+                   <img class="mix design" src="img/squarepic.png" alt="">
+                   <img class="mix art" src="img/squarepic2.png" alt="">
+                   <img class="mix design" src="img/squarepic2.png" alt="">
+                   <img class="mix art" src="img/squarepic.png" alt="">
+                   <img class="mix design" src="img/squarepic.png" alt="">
+                   <img class="mix teach" src="img/squarepic2.png" alt="">
+                   <img class="mix design" src="img/squarepic2.png" alt="">
+                   <img class="mix art" src="img/squarepic.png" alt="">
+                   <img class="mix design" src="img/squarepic.png" alt="">
+                   <img class="mix teach" src="img/squarepic2.png" alt="">
+                   <img class="mix art" src="img/squarepic2.png" alt="">
+                   <img class="mix teach" src="img/squarepic.png" alt="">
+                   <img class="mix design" src="img/squarepic.png" alt="">
+                   <img class="mix art" src="img/squarepic2.png" alt="">
+              </container>
+              <div id="about">
+                   <h3>About Me</h3>
+                   <img src="img/dance.jpg" alt="">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.</p>
+                   <p>Duis luctus congue dolor, sed hendrerit mauris faucibus a. Donec eleifend nulla ipsum, quis fermentum velit venenatis aliquet. Phasellus fringilla massa nisl, at dignissim nibh interdum non.</p>
+               </div>
+               
             </main>
             <footer>
-
-                <nav>
-                  <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Banksy</a></li>
-                    <li><a href="#">Picasso</a></li>
-                    <li><a href="#">Matisse</a></li>
-                  </ul>
-                </nav>
-                
+            <a href="#home">Top</a>
+                <p>&copy Heidi Cone 2014</p>
             </footer>
         </div>
 
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery.mixitup.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>
