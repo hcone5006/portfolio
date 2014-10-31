@@ -12,13 +12,11 @@ button,
 input,
 select,
 textarea {
-  color: #222;
-}
+  color: #222; }
 
 html {
   font-size: 1em;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -27,13 +25,11 @@ html {
  */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
@@ -44,8 +40,7 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
@@ -55,8 +50,7 @@ audio,
 canvas,
 img,
 video {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
@@ -64,15 +58,13 @@ video {
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical;
-}
+  resize: vertical; }
 
 /* ==========================================================================
    Browse Happy prompt
@@ -81,8 +73,7 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
-}
+  padding: 0.2em 0; }
 
 /* ==========================================================================
    Author's custom styles
@@ -90,133 +81,114 @@ textarea {
    ========================================================================== */
 h1 {
   font-family: 'Lobster Two', cursive;
-  font-size: 40px;
-}
+  font-size: 40px; }
 
 h2, h3, nav a, li {
   font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
-}
+  font-size: 24px; }
 
 h2, h3 {
-  margin: 3%;
-}
+  margin: 3%; }
 
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: light;
-  margin: 3%;
-}
+  margin: 3%; }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background-color: red;
-}
-nav ul li, nav ul a {
-  list-style: none;
-  display: block;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #333333;
-  border-top: none;
-  display: block;
-  background-color: white;
-  color: #333333;
-  text-decoration: none;
-  text-align: center;
-  font-size: 24px;
-  line-height: 2;
-  font-weight: bold;
-}
-nav ul li:hover, nav ul li.selected, nav ul a:hover, nav ul a.selected {
-  background: -webkit-linear-gradient(#333333, black);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#333333, black);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#333333, black);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#333333, black);
-  /* Standard syntax */
-  background-color: #333333;
-  color: white;
-}
-nav ul li:last-child, nav ul a:last-child {
-  border-bottom: 1px solid #333333;
-}
+  background-color: red; }
+  nav ul li, nav ul a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #333333;
+    border-top: none;
+    display: block;
+    background-color: white;
+    color: #333333;
+    text-decoration: none;
+    text-align: center;
+    font-size: 24px;
+    line-height: 2;
+    font-weight: bold; }
+    nav ul li:hover, nav ul li.selected, nav ul a:hover, nav ul a.selected {
+      background: -webkit-linear-gradient(#333333, black);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#333333, black);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#333333, black);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#333333, black);
+      /* Standard syntax */
+      background-color: #333333;
+      color: white; }
+    nav ul li:last-child, nav ul a:last-child {
+      border-bottom: 1px solid #333333; }
 
 body {
   background-color: #DDDDDD;
-  margin: 0;
-}
-body header {
-  padding: 3%;
-  /*20/340*/
-  background: -webkit-linear-gradient(#333333, black);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#333333, black);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#333333, black);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#333333, black);
-  /* Standard syntax */
-  background-color: #333333;
-  color: white;
-}
-body header h1 {
-  padding: 0;
-  margin: 0;
-}
-body main {
-  padding: 0;
-  background-color: white;
-}
-body main h2 {
-  padding: 0 5.8824%;
-  /*20/340*/
-}
-body main > div {
-  margin: 0 0 20px;
-  background-color: #EEEEEE;
-}
-body main #all-work {
-  background-color: blue;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-body main #all-work img {
-  width: 49.31%;
-  padding: 0;
-  margin: 0 auto;
-  display: none;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-body main #about img {
-  width: 100%;
-}
-body footer {
-  padding: 20px 5.8824%;
-  /*20/340*/
-  background: -webkit-linear-gradient(#333333, black);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#333333, black);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#333333, black);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#333333, black);
-  /* Standard syntax */
-  background-color: #333333;
-  color: white;
-  text-align: right;
-}
-body footer a {
-  color: white;
-}
+  margin: 0; }
+  body header {
+    padding: 3%;
+    /*20/340*/
+    background: -webkit-linear-gradient(#333333, black);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333333, black);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333333, black);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333333, black);
+    /* Standard syntax */
+    background-color: #333333;
+    color: white; }
+    body header h1 {
+      padding: 0;
+      margin: 0; }
+  body main {
+    padding: 0;
+    background-color: white; }
+    body main h2 {
+      padding: 0 5.8824%;
+      /*20/340*/ }
+    body main > div {
+      margin: 0 0 20px;
+      background-color: #EEEEEE; }
+    body main #all-work {
+      background-color: blue;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center; }
+      body main #all-work img {
+        width: 49.31%;
+        padding: 0;
+        margin: 0 auto;
+        display: none;
+        flex-grow: 1;
+        flex-shrink: 1; }
+    body main #about img {
+      width: 100%; }
+  body footer {
+    padding: 20px 5.8824%;
+    /*20/340*/
+    background: -webkit-linear-gradient(#333333, black);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333333, black);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333333, black);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333333, black);
+    /* Standard syntax */
+    background-color: #333333;
+    color: white;
+    text-align: right; }
+    body footer a {
+      color: white; }
 
 /* ==========================================================================
    Media Query for Tablet Layout.
@@ -224,68 +196,57 @@ body footer a {
 @media only screen and (min-width: 700px) {
   header {
     padding: 20px 3.03030303%;
-    /*20/660*/
-  }
+    /*20/660*/ }
 
-  body .wrapper nav ul li {
-    display: inline-block;
-  }
+  body .wrapper nav ul {
+    background-color: white; }
+    body .wrapper nav ul li, body .wrapper nav ul a {
+      display: inline-block;
+      width: 19.44%;
+      margin: 0 auto;
+      border: 0px; }
   body main {
     padding: 10px 1.515151%;
-    /*10/660*/
-  }
-  body main h2 {
-    padding: 0 1.5625%;
-    /*10/640*/
-  }
-  body main #all-work img {
-    width: 33.3%;
-  }
-  body main #about {
-    width: 100%;
-  }
-  body main #about img {
-    width: 50%;
-  }
-  body main #about p {
-    width: 50%;
-  }
+    /*10/660*/ }
+    body main h2 {
+      padding: 0 1.5625%;
+      /*10/640*/ }
+    body main #all-work img {
+      width: 33.3%; }
+    body main #about {
+      width: 100%; }
+      body main #about img {
+        width: 50%; }
+      body main #about p {
+        width: 50%; }
   body footer {
     padding: 20px 3.03030303%;
-    /*20/660*/
-  }
-}
+    /*20/660*/ } }
 /* ==========================================================================
    Media Query for Desktop.
    ========================================================================== */
 @media only screen and (min-width: 1000px) {
   header {
     padding: 20px 2.04081%;
-    /*20/980*/
-  }
+    /*20/980*/ }
 
   .wrapper {
     width: 98%;
-    max-width: 1400px;
-  }
+    max-width: 1400px; }
 
   main {
     padding: 10px 1.02%;
-    /*10/980*/
-  }
+    /*10/980*/ }
 
   main > div {
     margin: 10px 1.04166666%;
     /*10/960*/
     padding: 10px 1.04166666%;
-    /*10/960*/
-  }
+    /*10/960*/ }
 
   footer {
     padding: 20px 2.04081%;
-    /*20/980*/
-  }
-}
+    /*20/980*/ } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -297,23 +258,20 @@ body footer a {
   border: 0;
   overflow: hidden;
   /* IE 6/7 fallback */
-  *text-indent: -9999px;
-}
+  *text-indent: -9999px; }
 
 .ir:before {
   content: "";
   display: block;
   width: 0;
-  height: 150%;
-}
+  height: 150%; }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 .hidden {
   display: none !important;
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
@@ -326,8 +284,7 @@ body footer a {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
-}
+  width: 1px; }
 
 /*
  * Extends the .visuallyhidden class to allow the element to be focusable
@@ -340,15 +297,13 @@ body footer a {
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto;
-}
+  width: auto; }
 
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Clearfix: contain floats
@@ -366,24 +321,20 @@ body footer a {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
+  /* 2 */ }
 
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
 .clearfix {
-  *zoom: 1;
-}
+  *zoom: 1; }
 
 @media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
@@ -394,21 +345,17 @@ body footer a {
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    text-shadow: none !important; }
 
   a,
   a:visited {
-    text-decoration: underline;
-  }
+    text-decoration: underline; }
 
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    content: " (" attr(href) ")"; }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+    content: " (" attr(title) ")"; }
 
   /*
    * Don't show links for images, or javascript/internal links
@@ -416,41 +363,32 @@ body footer a {
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
-    content: "";
-  }
+    content: ""; }
 
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   thead {
     display: table-header-group;
-    /* h5bp.com/t */
-  }
+    /* h5bp.com/t */ }
 
   tr,
   img {
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   img {
-    max-width: 100% !important;
-  }
+    max-width: 100% !important; }
 
   @page {
-    margin: 0.5cm;
-  }
+    margin: 0.5cm; }
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3;
-  }
+    widows: 3; }
 
   h2,
   h3 {
-    page-break-after: avoid;
-  }
-}
+    page-break-after: avoid; } }

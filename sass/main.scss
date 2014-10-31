@@ -118,13 +118,17 @@ body{
     body{
         .wrapper{
             nav{
-                    ul{
-                        li{
+                ul{
+                    background-color: white;
+                    li, a{
                         display: inline-block;
-                        }
+                        width: 19.44%;
+                        margin: 0 auto;
+                        border: 0px;
                     }
                 }
             }
+        }
         main{
             padding: 10px 1.515151%; /*10/660*/
             h2{
