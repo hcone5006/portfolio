@@ -161,14 +161,12 @@ body {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
-      align-items: center; }
+      align-items: left; }
       body main #all-work img {
         width: 49.31%;
         padding: 0;
         margin: 0 auto;
-        display: none;
-        flex-grow: 1;
-        flex-shrink: 1; }
+        display: none; }
     body main #about img {
       width: 100%; }
   body footer {
