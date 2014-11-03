@@ -101,7 +101,12 @@ nav ul {
   margin: 0;
   padding: 0;
   background-color: red; }
-  nav ul li, nav ul a {
+  nav ul a {
+    text-decoration: none;
+    color: #333333; }
+    nav ul a:hover, nav ul a.selected {
+      color: white; }
+  nav ul li {
     list-style: none;
     display: block;
     margin: 0;
@@ -116,7 +121,7 @@ nav ul {
     font-size: 24px;
     line-height: 2;
     font-weight: bold; }
-    nav ul li:hover, nav ul li.selected, nav ul a:hover, nav ul a.selected {
+    nav ul li:hover, nav ul li.selected {
       background: -webkit-linear-gradient(black, #333333);
       /* For Safari 5.1 to 6.0 */
       background: -o-linear-gradient(black, #333333);
@@ -127,12 +132,17 @@ nav ul {
       /* Standard syntax */
       background-color: #333333;
       color: white; }
-    nav ul li:last-child, nav ul a:last-child {
+    nav ul li:last-child {
       border-bottom: 1px solid #333333; }
 
 body {
   background-color: #DDDDDD;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
+  body .wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
   body header {
     padding: 3%;
     /*20/340*/
@@ -158,17 +168,12 @@ body {
     body main > div {
       margin: 0 0 20px; }
     body main #all-work {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: center; }
-      body main #all-work img {
+      font-size: 0.000em; }
+      body main #all-work img, body main #all-work .gap {
         width: 49.31%;
         padding: 0;
         margin: 0 auto;
-        display: none;
-        flex-grow: 1;
-        flex-shrink: 1; }
+        display: none; }
     body main #about img {
       width: 100%; }
   body footer {
@@ -208,36 +213,45 @@ body {
    Media Query for Tablet Layout.
    ========================================================================== */
 @media only screen and (min-width: 700px) {
-  header {
-    padding: 20px 3.03030303%;
+  body header {
+    padding: 2%;
     /*20/660*/ }
-
-  body .wrapper nav ul {
-    background-color: white; }
-    body .wrapper nav ul li, body .wrapper nav ul a {
-      display: inline-block;
-      width: 19.44%;
-      margin: 0 auto;
-      border: 0px; }
+  body .wrapper {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+    body .wrapper nav {
+      width: 100%; }
+      body .wrapper nav ul {
+        width: 100%;
+        background-color: white; }
+        body .wrapper nav ul a {
+          display: block; }
+        body .wrapper nav ul li {
+          display: block;
+          float: left;
+          width: 20%;
+          margin: 0 auto;
+          border: 0px; }
   body main {
-    padding: 0; }
+    padding: 0;
+    width: 100%; }
     body main h2 {
       padding: 0 1.5625%;
       /*10/640*/ }
-    body main #all-work img {
+    body main #all-work img, body main #all-work .gap {
       width: 33.3%; }
     body main #about {
-      width: 100%;
       padding: 20px 3.03030303%; }
       body main #about h3 {
         font-size: 32px;
         margin: 0px 0px 10px 0px; }
       body main #about img {
-        width: 45%;
+        width: 49%;
         display: inline-block;
         vertical-align: top; }
       body main #about p {
-        width: 45%;
+        width: 49%;
         margin: 0px 0px 0px 10px;
         font-size: 20px;
         display: inline-block;
@@ -256,21 +270,17 @@ body {
    Media Query for Desktop.
    ========================================================================== */
 @media only screen and (min-width: 1000px) {
-  body .wrapper {
-    width: 100%;
-    max-width: 1400px; }
-    body .wrapper header {
-      padding: 20px 2.04081%;
-      /*20/980*/ }
-    body .wrapper main #allwork img {
-      width: 20%; }
-    body .wrapper footer {
-      padding: 20px 2.04081%;
-      /*20/980*/ }
-      body .wrapper footer img {
-        width: 3.5%; }
-      body .wrapper footer p {
-        margin: 0 30%; } }
+  body main #all-work img, body main #all-work .gap {
+    width: 20%; }
+  body footer {
+    padding: 20px 3.03030303%;
+    /*20/660*/ }
+    body footer img {
+      width: 3%; }
+    body footer p {
+      margin: 0 30%; }
+    body footer a {
+      font-size: 18px; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

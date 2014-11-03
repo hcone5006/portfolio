@@ -4,7 +4,15 @@ nav{
         margin:0;
         padding:0;
         background-color: red;
-        li, a{
+        a{
+            // width: 100%;
+            text-decoration: none;
+            color: #333333;
+            &:hover, &.selected{
+                color: white;
+            }
+        }
+        li{
             list-style: none;
             display:block;
             margin:0;
@@ -31,25 +39,11 @@ nav{
                 background-color: #333333;
                 color:white;
             }
-            // a{
-            //     display:block;
-            //     margin:0;
-            //     padding:0;
-            //     background-color: white;
-            //     color:#333333;
-            //     text-decoration: none;
-            //     text-align: center;
-            //     font-size:24px;
-            //     line-height: 2;
-            //     font-weight:bold;
-            //     &:hover, &.selected{
-            //         background-color: #333333;
-            //         color:white;
-            //     }
-            // }
+            
             &:last-child{
                 border-bottom: 1px solid #333333;
             }
+
         }
     }
 } 
