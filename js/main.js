@@ -6,11 +6,11 @@ $(document).ready(function(){
 	$("li a").click(function(){
 		$("html, body").animate({
 			scrollTop: $("#about").offset().top
-		}, 2000);
+		}, 1000);
 	});
 	$("footer a").click(function(){
 		$("html, body").animate({
 			scrollTop: $("#home").offset().top
-		}, 2000);
+		}, 1000);
 	});
 })

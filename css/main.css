@@ -161,12 +161,14 @@ body {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
-      align-items: left; }
+      align-items: center; }
       body main #all-work img {
         width: 49.31%;
         padding: 0;
         margin: 0 auto;
-        display: none; }
+        display: none;
+        flex-grow: 1;
+        flex-shrink: 1; }
     body main #about img {
       width: 100%; }
   body footer {
@@ -218,47 +220,57 @@ body {
       margin: 0 auto;
       border: 0px; }
   body main {
-    padding: 10px 1.515151%;
-    /*10/660*/ }
+    padding: 0; }
     body main h2 {
       padding: 0 1.5625%;
       /*10/640*/ }
     body main #all-work img {
       width: 33.3%; }
     body main #about {
-      width: 100%; }
+      width: 100%;
+      padding: 20px 3.03030303%; }
+      body main #about h3 {
+        font-size: 32px;
+        margin: 0px 0px 10px 0px; }
       body main #about img {
-        width: 50%; }
+        width: 45%;
+        display: inline-block;
+        vertical-align: top; }
       body main #about p {
-        width: 50%; }
+        width: 45%;
+        margin: 0px 0px 0px 10px;
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: top; }
   body footer {
     padding: 20px 3.03030303%;
-    /*20/660*/ } }
+    /*20/660*/ }
+    body footer img {
+      width: 5%; }
+    body footer p {
+      font-size: 18px;
+      margin: 0 25%; }
+    body footer a {
+      font-size: 18px; } }
 /* ==========================================================================
    Media Query for Desktop.
    ========================================================================== */
 @media only screen and (min-width: 1000px) {
-  header {
-    padding: 20px 2.04081%;
-    /*20/980*/ }
-
-  .wrapper {
-    width: 98%;
+  body .wrapper {
+    width: 100%;
     max-width: 1400px; }
-
-  main {
-    padding: 10px 1.02%;
-    /*10/980*/ }
-
-  main > div {
-    margin: 10px 1.04166666%;
-    /*10/960*/
-    padding: 10px 1.04166666%;
-    /*10/960*/ }
-
-  footer {
-    padding: 20px 2.04081%;
-    /*20/980*/ } }
+    body .wrapper header {
+      padding: 20px 2.04081%;
+      /*20/980*/ }
+    body .wrapper main #allwork img {
+      width: 20%; }
+    body .wrapper footer {
+      padding: 20px 2.04081%;
+      /*20/980*/ }
+      body .wrapper footer img {
+        width: 3.5%; }
+      body .wrapper footer p {
+        margin: 0 30%; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
