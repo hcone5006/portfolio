@@ -3,6 +3,7 @@ $(document).ready(function(){
 		//initiate MixItUp
 		$('#all-work').mixItUp();
 	});
+
 	$("li a").click(function(e){
 		e.preventDefault();
 		$("#about").velocity('scroll',{
@@ -19,9 +20,15 @@ $(document).ready(function(){
 			easing: 'easeInOutQuad'
 		});
 	});
+
 	$('.gallery-item').hover( function() {
         $(this).find('.img-title').fadeIn(300);
     }, function() {
         $(this).find('.img-title').fadeOut(100);
     });
+    
+    $('.fancybox').fancybox({
+            padding : 0,
+            openEffect  : 'elastic'
+        });
 })
