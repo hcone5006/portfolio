@@ -18,7 +18,7 @@ nav{
             margin:0;
             padding:0;
             // background-color: green;
-            border: 1px solid #333333;
+            border: 1px solid #5d27af;
             border-top: none;
             display:block;
             //originally hyperlink styling
@@ -32,11 +32,11 @@ nav{
             line-height: 2;
             font-weight: bold;
             &:hover, &.selected{
-                background: -webkit-linear-gradient(black, #333333); /* For Safari 5.1 to 6.0 */
-                background: -o-linear-gradient(black, #333333); /* For Opera 11.1 to 12.0 */
-                background: -moz-linear-gradient(black, #333333); /* For Firefox 3.6 to 15 */
-                background: linear-gradient(black, #333333); /* Standard syntax */
-                background-color: #333333;
+                background: -webkit-linear-gradient(#7142b9, #9e7dcf); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(#7142b9, #9e7dcf); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(#7142b9, #9e7dcf); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(#7142b9, #9e7dcf); /* Standard syntax */
+                background-color: #7142b9;
                 color:white;
             }
             
