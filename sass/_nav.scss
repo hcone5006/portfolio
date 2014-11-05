@@ -7,7 +7,8 @@ nav{
         a{
             // width: 100%;
             text-decoration: none;
-            color: #333333;
+            color: #6c6911;
+            font-size: 20px;
             &:hover, &.selected{
                 color: white;
             }
@@ -17,31 +18,34 @@ nav{
             display:block;
             margin:0;
             padding:0;
-            // background-color: green;
-            border: 1px solid #5d27af;
+            color:#6c6911;
+            // background: linear-gradient(#6c6911, #b9b542, #b9b542);
+            border: 1px solid #6c6911;
             border-top: none;
             display:block;
             //originally hyperlink styling
             // margin:0;
             // padding:0;
             background-color: white;
-            color:#333333;
+            // background-color: #b9b542;
+            color:#6c6911;
             text-decoration: none;
             text-align: center;
-            font-size: 24px;
+            font-size: 20px;
             line-height: 2;
             font-weight: bold;
             &:hover, &.selected{
-                background: -webkit-linear-gradient(#7142b9, #9e7dcf); /* For Safari 5.1 to 6.0 */
-                background: -o-linear-gradient(#7142b9, #9e7dcf); /* For Opera 11.1 to 12.0 */
-                background: -moz-linear-gradient(#7142b9, #9e7dcf); /* For Firefox 3.6 to 15 */
-                background: linear-gradient(#7142b9, #9e7dcf); /* Standard syntax */
+                background: -webkit-linear-gradient(#d8bfff, #3c1c6c); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(#d8bfff, #3c1c6c); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(#d8bfff, #3c1c6c); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(#d8bfff, #3c1c6c); /* Standard syntax */
+                background: linear-gradient(#d8bfff, #3c1c6c);//purple version
                 background-color: #7142b9;
-                color:white;
+                color: white;
             }
             
             &:last-child{
-                border-bottom: 1px solid #333333;
+                border-bottom: 1px solid #ab74ff;
             }
 
         }

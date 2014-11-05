@@ -102,7 +102,8 @@ nav ul {
   padding: 0; }
   nav ul a {
     text-decoration: none;
-    color: #333333; }
+    color: #6c6911;
+    font-size: 20px; }
     nav ul a:hover, nav ul a.selected {
       color: white; }
   nav ul li {
@@ -110,29 +111,31 @@ nav ul {
     display: block;
     margin: 0;
     padding: 0;
-    border: 1px solid #5d27af;
+    color: #6c6911;
+    border: 1px solid #6c6911;
     border-top: none;
     display: block;
     background-color: white;
-    color: #333333;
+    color: #6c6911;
     text-decoration: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 2;
     font-weight: bold; }
     nav ul li:hover, nav ul li.selected {
-      background: -webkit-linear-gradient(#7142b9, #9e7dcf);
+      background: -webkit-linear-gradient(#d8bfff, #3c1c6c);
       /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#7142b9, #9e7dcf);
+      background: -o-linear-gradient(#d8bfff, #3c1c6c);
       /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#7142b9, #9e7dcf);
+      background: -moz-linear-gradient(#d8bfff, #3c1c6c);
       /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#7142b9, #9e7dcf);
+      background: linear-gradient(#d8bfff, #3c1c6c);
       /* Standard syntax */
+      background: linear-gradient(#d8bfff, #3c1c6c);
       background-color: #7142b9;
       color: white; }
     nav ul li:last-child {
-      border-bottom: 1px solid #333333; }
+      border-bottom: 1px solid #ab74ff; }
 
 body {
   background-color: #DDDDDD;
@@ -145,23 +148,29 @@ body {
   body header {
     padding: 3%;
     /*20/340*/
-    background: -webkit-linear-gradient(#5d27af, #9e7dcf);
+    background: -webkit-linear-gradient(white, white, #d8bfff);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#5d27af, #9e7dcf);
+    background: -o-linear-gradient(white, white, #d8bfff);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#5d27af, #9e7dcf);
+    background: -moz-linear-gradient(white, white, #d8bfff);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#5d27af, #9e7dcf);
+    background: linear-gradient(white, white, #d8bfff);
     /* Standard syntax */
-    background-color: #5d27af;
-    color: white; }
+    background-color: white;
+    color: black; }
     body header h1 {
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      color: #3c1c6c;
+      margin-left: 0 auto;
+      margin-right: 0 auto; }
+      body header h1:hover {
+        color: #7142b9; }
   body main {
     padding: 0;
     background-color: white; }
     body main h2 {
+      color: #6c6911;
       padding: 0 5.8824%;
       /*20/340*/ }
     body main > div {
@@ -184,9 +193,9 @@ body {
           text-align: center;
           position: absolute;
           display: none;
-          background-color: #333333; }
+          background-color: #b9b542; }
           body main #all-work .gallery-item .img-title h4, body main #all-work .gap .img-title h4 {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: lighter;
             font-family: 'Open Sans', sans-serif;
             position: absolute;
@@ -194,21 +203,24 @@ body {
             top: 33%;
             width: 100%;
             text-align: center; }
+    body main #about h3 {
+      color: #3c1c6c;
+      font-family: "Lobster Two", cursive; }
     body main #about img {
       width: 100%; }
   body footer {
     padding: 3%;
     /*20/340*/
-    background: -webkit-linear-gradient(#333333, #7142b9);
+    background: -webkit-linear-gradient(#3c1c6c, #d8bfff, white);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#333333, #7142b9);
+    background: -o-linear-gradient(#3c1c6c, #d8bfff, white);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#333333, #7142b9);
+    background: -moz-linear-gradient(#3c1c6c, #d8bfff, white);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#333333, #7142b9);
+    background: linear-gradient(#3c1c6c, #d8bfff, white);
     /* Standard syntax */
-    background-color: #333333;
-    color: white; }
+    background-color: #7142b9;
+    color: #3c1c6c; }
     body footer img {
       width: 10%;
       text-align: left;
@@ -222,12 +234,14 @@ body {
       position: relative;
       font-size: 12px; }
     body footer a {
-      color: white;
+      color: #6c6911;
       text-align: right;
       display: inline-block;
       position: relative;
       font-size: 12px;
       margin-left: 10%; }
+      body footer a:hover {
+        color: #b9b542; }
 
 /* ==========================================================================
    Media Query for Tablet Layout.
@@ -260,22 +274,22 @@ body {
         padding: 0 1.5625%;
         /*10/640*/ }
       body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
-        width: 33.3%; }
+        width: 25%; }
         body .wrapper main #all-work .gallery-item .img-title h4, body .wrapper main #all-work .gap .img-title h4 {
-          font-size: 28px; }
+          font-size: 18px; }
       body .wrapper main #about {
         padding: 20px 3.03030303%; }
         body .wrapper main #about h3 {
-          font-size: 32px;
+          font-size: 40px;
           margin: 0px 0px 10px 0px; }
         body .wrapper main #about img {
-          width: 49%;
+          width: 40%;
           display: inline-block;
           vertical-align: top; }
         body .wrapper main #about p {
-          width: 49%;
+          width: 57%;
           margin: 0px 0px 0px 10px;
-          font-size: 20px;
+          font-size: 18px;
           display: inline-block;
           vertical-align: top; }
     body .wrapper footer {
@@ -285,7 +299,7 @@ body {
         width: 5%; }
       body .wrapper footer p {
         font-size: 18px;
-        margin: 0 25%; }
+        margin: 0 23%; }
       body .wrapper footer a {
         font-size: 18px; } }
 /* ==========================================================================
@@ -293,7 +307,7 @@ body {
    ========================================================================== */
 @media only screen and (min-width: 1000px) {
   body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
-    width: 25%; }
+    width: 20%; }
   body footer {
     padding: 20px 3.03030303%;
     /*20/660*/ }
