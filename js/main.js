@@ -12,8 +12,16 @@ $(document).ready(function(){
 		});
 
 	});
+	$("header h1").click(function(e){
+		e.preventDefault();
+		$("#about").velocity('scroll',{
+			duration:1000,
+			easing: 'easeInOutQuad'
+		});
 
-	$("footer a").click(function(e){
+	});
+
+	$("#top").click(function(e){
 		e.preventDefault();
 		$("#home").velocity('scroll',{
 			duration:1000,

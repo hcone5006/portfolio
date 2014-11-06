@@ -80,12 +80,10 @@ textarea {
    Default Mobile First Styles
    ========================================================================== */
 h1 {
-  font-family: 'Lobster Two', cursive;
-  font-size: 40px; }
+  font-family: 'Lobster Two', cursive; }
 
 h2, h3, h4, nav a, li {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 24px; }
+  font-family: 'Open Sans', sans-serif; }
 
 h2, h3 {
   margin: 3%; }
@@ -102,7 +100,7 @@ nav ul {
   padding: 0; }
   nav ul a {
     text-decoration: none;
-    color: #6c6911;
+    color: #b9b542;
     font-size: 20px; }
     nav ul a:hover, nav ul a.selected {
       color: white; }
@@ -111,28 +109,16 @@ nav ul {
     display: block;
     margin: 0;
     padding: 0;
-    color: #6c6911;
-    border: 1px solid #6c6911;
+    color: #b9b542;
+    border: 1px solid #7142b9;
     border-top: none;
     display: block;
-    background-color: white;
-    color: #6c6911;
     text-decoration: none;
     text-align: center;
     font-size: 20px;
     line-height: 2;
     font-weight: bold; }
     nav ul li:hover, nav ul li.selected {
-      background: -webkit-linear-gradient(#d8bfff, #3c1c6c);
-      /* For Safari 5.1 to 6.0 */
-      background: -o-linear-gradient(#d8bfff, #3c1c6c);
-      /* For Opera 11.1 to 12.0 */
-      background: -moz-linear-gradient(#d8bfff, #3c1c6c);
-      /* For Firefox 3.6 to 15 */
-      background: linear-gradient(#d8bfff, #3c1c6c);
-      /* Standard syntax */
-      background: linear-gradient(#d8bfff, #3c1c6c);
-      background-color: #7142b9;
       color: white; }
     nav ul li:last-child {
       border-bottom: 1px solid #ab74ff; }
@@ -146,26 +132,18 @@ body {
     padding: 0;
     width: 100%; }
   body header {
-    padding: 3%;
-    /*20/340*/
-    background: -webkit-linear-gradient(white, white, #d8bfff);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(white, white, #d8bfff);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(white, white, #d8bfff);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(white, white, #d8bfff);
-    /* Standard syntax */
-    background-color: white;
-    color: black; }
+    width: 100%;
+    padding: 0;
+    background-color: #3c1c6c;
+    color: white; }
     body header h1 {
-      padding: 0;
+      display: inline-block;
+      padding: 3%;
       margin: 0;
-      color: #3c1c6c;
-      margin-left: 0 auto;
-      margin-right: 0 auto; }
+      color: #ab74ff;
+      font-size: 40px; }
       body header h1:hover {
-        color: #7142b9; }
+        color: white; }
   body main {
     padding: 0;
     background-color: white; }
@@ -173,8 +151,6 @@ body {
       color: #6c6911;
       padding: 0 5.8824%;
       /*20/340*/ }
-    body main > div {
-      margin: 0 0 20px; }
     body main #all-work {
       font-size: 0.000em; }
       body main #all-work .gallery-item, body main #all-work .gap {
@@ -203,7 +179,10 @@ body {
             top: 33%;
             width: 100%;
             text-align: center; }
+    body main .panels img {
+      width: 100%; }
     body main #about h3 {
+      font-size: 40px;
       color: #3c1c6c;
       font-family: "Lobster Two", cursive; }
     body main #about img {
@@ -211,111 +190,127 @@ body {
   body footer {
     padding: 3%;
     /*20/340*/
-    background: -webkit-linear-gradient(#3c1c6c, #d8bfff, white);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#3c1c6c, #d8bfff, white);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#3c1c6c, #d8bfff, white);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#3c1c6c, #d8bfff, white);
-    /* Standard syntax */
     background-color: #7142b9;
-    color: #3c1c6c; }
+    color: white; }
     body footer img {
-      width: 10%;
+      width: 7%;
       text-align: left;
       margin: 0;
-      padding: 0; }
+      padding: 1%;
+      float: left; }
       body footer img:last-child {
         display: block; }
     body footer p {
       text-align: center;
       display: inline-block;
       position: relative;
-      font-size: 12px; }
-    body footer a {
-      color: #6c6911;
-      text-align: right;
-      display: inline-block;
-      position: relative;
       font-size: 12px;
-      margin-left: 10%; }
-      body footer a:hover {
-        color: #b9b542; }
+      width: 57%; }
+    body footer #top {
+      width: 10%;
+      color: #b9b542;
+      text-align: right;
+      /*display: inline-block;
+      position: relative;*/
+      font-size: 12px;
+      margin: 3% 0;
+      float: right;
+      text-decoration: none;
+      vertical-align: middle; }
+      body footer #top:hover {
+        color: white; }
 
 /* ==========================================================================
    Media Query for Tablet Layout.
    ========================================================================== */
 @media only screen and (min-width: 700px) {
-  body header {
-    padding: 2%;
-    /*20/660*/ }
-  body .wrapper {
-    margin: 0;
-    padding: 0;
-    width: 100%; }
-    body .wrapper nav {
-      width: 100%; }
-      body .wrapper nav ul {
-        width: 100%;
-        background-color: white; }
-        body .wrapper nav ul a {
-          display: block; }
-        body .wrapper nav ul li {
-          display: block;
-          float: left;
-          width: 20%;
-          margin: 0 auto;
-          border: 0px; }
-    body .wrapper main {
+  body {
+    background: white; }
+    body header {
+      padding: 0%;
+      /*20/660*/
+      margin-bottom: 5%;
+      display: inline-block; }
+      body header h1 {
+        padding: 0 2%; }
+      body header nav {
+        width: 51%;
+        display: block;
+        float: right; }
+        body header nav ul {
+          width: 100%; }
+          body header nav ul a {
+            /*display: block;*/
+            border: 0px;
+            margin-right: 5%; }
+          body header nav ul li {
+            float: right;
+            vertical-align: text-bottom;
+            display: inline-block;
+            margin: 0 auto;
+            border: 0px;
+            padding: 0 2%; }
+            body header nav ul li:last-child {
+              border: 0px; }
+    body .wrapper {
+      margin: 0;
       padding: 0;
       width: 100%; }
-      body .wrapper main h2 {
-        padding: 0 1.5625%;
-        /*10/640*/ }
-      body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
-        width: 25%; }
-        body .wrapper main #all-work .gallery-item .img-title h4, body .wrapper main #all-work .gap .img-title h4 {
-          font-size: 18px; }
-      body .wrapper main #about {
-        padding: 20px 3.03030303%; }
-        body .wrapper main #about h3 {
-          font-size: 40px;
-          margin: 0px 0px 10px 0px; }
-        body .wrapper main #about img {
-          width: 40%;
-          display: inline-block;
-          vertical-align: top; }
-        body .wrapper main #about p {
-          width: 57%;
-          margin: 0px 0px 0px 10px;
-          font-size: 18px;
-          display: inline-block;
-          vertical-align: top; }
-    body .wrapper footer {
-      padding: 20px 3.03030303%;
-      /*20/660*/ }
-      body .wrapper footer img {
-        width: 5%; }
-      body .wrapper footer p {
-        font-size: 18px;
-        margin: 0 23%; }
-      body .wrapper footer a {
-        font-size: 18px; } }
+      body .wrapper main {
+        padding: 0;
+        width: 100%; }
+        body .wrapper main h2 {
+          padding: 0 1.5625%;
+          /*10/640*/ }
+        body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
+          width: 25%; }
+          body .wrapper main #all-work .gallery-item .img-title h4, body .wrapper main #all-work .gap .img-title h4 {
+            font-size: 18px; }
+        body .wrapper main #about {
+          padding: 3%; }
+          body .wrapper main #about h3 {
+            font-size: 40px;
+            margin: 0px 0px 10px 0px; }
+          body .wrapper main #about img {
+            width: 40%;
+            display: inline-block;
+            vertical-align: top; }
+          body .wrapper main #about p {
+            width: 57%;
+            margin: 0;
+            font-size: 18px;
+            display: inline-block;
+            vertical-align: top; }
+      body .wrapper footer {
+        padding: 3%;
+        /*20/660*/ }
+        body .wrapper footer img {
+          width: 4%;
+          padding: 0 1% 0 0;
+          float: left; }
+        body .wrapper footer p {
+          font-size: 14px;
+          /*margin: 0 30%;*/
+          width: 75%;
+          margin: 0; }
+        body .wrapper footer #top {
+          margin: 0;
+          width: 10%;
+          float: right;
+          font-size: 14px; } }
 /* ==========================================================================
    Media Query for Desktop.
    ========================================================================== */
 @media only screen and (min-width: 1000px) {
+  body header nav {
+    width: 37%; }
   body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
     width: 20%; }
-  body footer {
-    padding: 20px 3.03030303%;
+  body .wrapper footer {
     /*20/660*/ }
-    body footer img {
-      width: 3%; }
-    body footer p {
-      margin: 0 25% 0 30%; }
-    body footer a {
+    body .wrapper footer img {
+      width: 2.5%; }
+    body .wrapper footer a {
       font-size: 18px; } }
 /* ==========================================================================
    Helper classes

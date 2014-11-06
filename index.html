@@ -13,24 +13,25 @@
     
         <div class="wrapper">
             <header id="home">
-                <h1>Heidi Cone</h1>
-            </header>
-            <nav>
+              <a href="#about"><h1>Heidi Cone</h1></a>
+              <nav>
                 <ul>
-                  <li class="filter" data-filter="all">All</li>
-                  <li class="filter" data-filter=".design">Design</li>
-                  <li class="filter" data-filter=".teach">Educate</li>
-                  <li class="filter" data-filter=".art">Create</li>
                   <li><a href="#about">About</a></li>
+                  <li class="filter" data-filter=".art">Create</li>
+                  <li class="filter" data-filter=".teach">Educate</li>
+                  <li class="filter" data-filter=".design">Design</li>
+                  <li class="filter" data-filter="all">All</li>
                 </ul>
               </nav>
+            </header>
+            
             <main class="clearfix">
 
               <container id="all-work" class="clearfix">
 
                 <figure class="gallery-item mix design">
                   <img src="img/squarepic.png" alt="">
-                  <a href="img/squarepic.png" class="fancybox" rel="design" title="KinderXplorer">
+                  <a href="#kinder" class="fancybox" rel="design">
                     <figcaption class="img-title">
                       <h4>KinderXplorer</h4>
                     </figcaption>
@@ -39,16 +40,16 @@
 
                 <figure class="gallery-item mix art">
                   <img src="img/squarepic2.png" alt="">
-                  <a href="img/squarepic2.png" class="fancybox" rel="art" title="Inkwash, 2005">
+                  <a href="#inkwash" class="fancybox" rel="art">
                     <figcaption class="img-title">
-                      <h4>Title 2</h4>
+                      <h4>Ink Wash, 2005</h4>
                     </figcaption>
                   </a>
                 </figure>
 
                 <figure class="gallery-item mix design">
                   <img src="img/squarepic2.png" alt="">
-                  <a href="img/squarepic2.png" class="fancybox" rel="design" title="Inkwash, 2005">
+                  <a href="#inkwash2" class="fancybox" rel="design">
                     <figcaption class="img-title">
                       <h4>Title 3</h4>
                     </figcaption>
@@ -57,7 +58,7 @@
 
                 <figure class="gallery-item mix art">
                   <img src="img/squarepic.png" alt="">
-                  <a href="img/squarepic.png" class="fancybox" rel="art" title="KinderXplorer">
+                  <a href="#kinder2" class="fancybox" rel="art">
                     <figcaption class="img-title">
                       <h4>Title 4</h4>
                     </figcaption>
@@ -66,7 +67,7 @@
 
                 <figure class="gallery-item mix teach">
                   <img src="img/squarepic.png" alt="">
-                  <a href="img/squarepic.png" class="fancybox" rel="teach" title="KinderXplorer">
+                  <a href="#kinder" class="fancybox" rel="teach">
                     <figcaption class="img-title">
                       <h4>Title 5</h4>
                     </figcaption>
@@ -75,7 +76,7 @@
 
                 <figure class="gallery-item mix design">
                   <img src="img/squarepic2.png" alt="">
-                  <a href="img/squarepic2.png" class="fancybox" rel="design" title="Inkwash, 2005">
+                  <a href="#inkwash" class="fancybox" rel="design">
                     <figcaption class="img-title">
                       <h4>Title 6</h4>
                     </figcaption>
@@ -84,7 +85,7 @@
 
                 <figure class="gallery-item mix art" >
                   <img src="img/squarepic2.png" alt="">
-                  <a href="img/squarepic2.png" class="fancybox" rel="art" title="Inkwash, 2005">
+                  <a href="#inkwash2" class="fancybox" rel="art">
                     <figcaption class="img-title">
                       <h4>Title 7</h4>
                     </figcaption>
@@ -93,7 +94,7 @@
 
                 <figure class="gallery-item mix teach">
                   <img src="img/squarepic.png" alt="">
-                  <a href="img/squarepic.png" class="fancybox" rel="teach" title="KinderXplorer">
+                  <a href="#kinder2" class="fancybox" rel="teach">
                     <figcaption class="img-title">
                       <h4>Title 8</h4>
                     </figcaption>
@@ -102,7 +103,7 @@
 
                 <figure class="gallery-item mix design">
                   <img src="img/squarepic.png" alt="">
-                  <a href="img/squarepic.png" class="fancybox" rel="design" title="KinderXplorer">
+                  <a href="#kinder" class="fancybox" rel="design">
                     <figcaption class="img-title">
                       <h4>Title 9</h4>
                     </figcaption>
@@ -111,7 +112,7 @@
 
                 <figure class="gallery-item mix teach">
                   <img src="img/squarepic.png" alt="">
-                  <a href="img/squarepic.png" class="fancybox" rel="teach" title="KinderXplorer">
+                  <a href="#kinder2" class="fancybox" rel="teach">
                     <figcaption class="img-title">
                       <h4>Title 10</h4>
                     </figcaption>
@@ -120,7 +121,7 @@
 
                 <figure class="gallery-item mix art">
                   <img src="img/squarepic2.png" alt="">
-                  <a href="img/squarepic2.png" class="fancybox" rel="art" title="Inkwash, 2005">
+                  <a href="#inkwash2" class="fancybox" rel="art">
                     <figcaption class="img-title">
                       <h4>Title 11</h4>
                     </figcaption>
@@ -143,6 +144,33 @@
                    <img class="mix art" src="img/squarepic2.png" alt="">
                    <div class="gap"></div> -->
               </container>
+              <div class="panels" style="display:none;">
+                <figure id="kinder">
+                  <img src="img/squarepic.png" alt="kinderxplorer">
+                  <figcaption>
+                    <h3>Designer Brief: KinderXplorer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.Duis luctus congue dolor, sed hendrerit mauris faucibus a. Donec eleifend nulla</p>
+                </figure>
+                <figure id="inkwash">
+                  <img src="img/squarepic2.png" alt="kinderxplorer">
+                  <figcaption>
+                    <h3>Inkwash, 2005</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.Duis luctus congue dolor, sed hendrerit mauris faucibus a. Donec eleifend nulla</p>
+                </figure>
+                <figure id="kinder2">
+                  <img src="img/squarepic.png" alt="kinderxplorer">
+                  <figcaption>
+                    <h3>Designer Brief: KinderXplorer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.Duis luctus congue dolor, sed hendrerit mauris faucibus a. Donec eleifend nulla</p>
+                </figure>
+                <figure id="inkwash2">
+                  <img src="img/squarepic2.png" alt="kinderxplorer">
+                  <figcaption>
+                    <h3>Another Ink Wash, 2006</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula a tellus vitae sodales. Cras sit amet dictum massa. Aenean posuere quam euismod viverra dignissim. In et pellentesque dui. Duis ultrices rutrum justo in convallis.Duis luctus congue dolor, sed hendrerit mauris faucibus a. Donec eleifend nulla</p>
+                </figure>
+              </div>
+
               <div id="about">
                    <h3>About Me</h3>
                    
@@ -153,12 +181,12 @@
             </main>
             <footer>
             
-                <img src="img/social123.png" alt="linkedin">
-                <img src="img/wordpress18.png" alt="wordpress">
+                <a href="http://nz.linkedin.com/pub/heidi-cone/26/82b/3b" target="_blank"><img src="img/social123.png" alt="linkedin"></a>
+                <a href="http://heidi-c.dmlive.co.nz/blog/" target="_blank"><img src="img/wordpress18.png" alt="wordpress"></a>
                <!--  <img src="img/facebook.png"> -->
-                <img src="img/social134.png" alt="gmail">
+                <a href="mailto:heidicone@gmail.com" target="_blank"><img src="img/social134.png" alt="gmail"></a>
                 <p>&copy Heidi Cone 2014</p>
-                <a href="#home">Top</a>
+                <a href="#home"><h4 id="top">Top</h4></a>
             </footer>
         </div>
 
