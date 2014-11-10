@@ -55,22 +55,17 @@
 .fancybox-inner {
 	overflow: hidden;
 }
-
+/*user added*/
 .fancybox-inner img{
 	width: 100%;
 	max-width: 700px;
 }
 
-<<<<<<< HEAD
 .fancybox-caption a, h3{
 	display: inline-block;
 	position: relative;
 }
 
-
-
-=======
->>>>>>> parent of 344e135... Design Work added
 .fancybox-type-iframe .fancybox-inner {
 	-webkit-overflow-scrolling: touch;
 }
@@ -129,7 +124,7 @@
 .fancybox-nav {
 	position: absolute;
 	top: 0;
-	width: 10%;
+	width: 40%;
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;

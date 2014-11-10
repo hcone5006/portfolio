@@ -105,11 +105,8 @@ nav ul {
     text-decoration: none;
     color: #c4d4cb;
     font-size: 20px; }
-    nav ul a:hover {
+    nav ul a:hover, nav ul a.selected {
       color: white; }
-    nav ul a.selected {
-      color: #e84167;
-      background-color: blue; }
   nav ul li {
     cursor: pointer;
     list-style: none;
@@ -125,21 +122,10 @@ nav ul {
     font-size: 20px;
     line-height: 2;
     font-weight: bold; }
-    nav ul li:hover {
+    nav ul li:hover, nav ul li.selected {
       color: white; }
-    nav ul li.selected {
-      color: #e84167; }
     nav ul li:last-child {
       border-bottom: 1px solid #ab74ff; }
-
-.button {
-  background-color: #e84167;
-  color: white;
-  border-radius: 10px;
-  font-family: 'Open Sans', sans-serif;
-  border: none; }
-  .button:hover {
-    background-color: #db1b46; }
 
 body {
   background-color: white;
@@ -253,12 +239,12 @@ body {
       padding: 0%;
       /*20/660*/
       margin-bottom: 5%;
-      position: fixed;
-      z-index: 2000; }
+      display: inline-block; }
       body header h1 {
         padding: 0 2%; }
       body header nav {
-        width: 60%;
+        width: 51%;
+        display: block;
         float: right; }
         body header nav ul {
           width: 100%; }
@@ -282,8 +268,6 @@ body {
       body .wrapper main {
         padding: 0;
         width: 100%; }
-        body .wrapper main .space {
-          height: 100px; }
         body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
           width: 25%; }
           body .wrapper main #all-work .gallery-item .img-title h4, body .wrapper main #all-work .gap .img-title h4 {
