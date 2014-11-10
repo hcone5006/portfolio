@@ -66,6 +66,8 @@
 	position: relative;
 }
 
+
+
 .fancybox-type-iframe .fancybox-inner {
 	-webkit-overflow-scrolling: touch;
 }
@@ -124,7 +126,7 @@
 .fancybox-nav {
 	position: absolute;
 	top: 0;
-	width: 40%;
+	width: 10%;
 	height: 100%;
 	cursor: pointer;
 	text-decoration: none;

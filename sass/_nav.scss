@@ -8,8 +8,12 @@ nav{
             text-decoration: none;
             color: $light-color;
             font-size: 20px;
-            &:hover, &.selected{
+            &:hover{
                 color: white;
+            }
+            &.selected{
+                color: $highlight-color;
+                background-color: blue;
             }
         }
         li{
@@ -28,10 +32,12 @@ nav{
             font-size: 20px;
             line-height: 2;
             font-weight: bold;
-            &:hover, &.selected{
+            &:hover{
                 color: white;
             }
-            
+            &.selected{
+                color: $highlight-color;
+            }
             &:last-child{
                 border-bottom: 1px solid #ab74ff;
             }

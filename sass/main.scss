@@ -49,6 +49,17 @@ p{
 //nav styling
 @import "nav";
 
+.button{
+    background-color: $highlight-color;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    &:hover{
+        background-color: darken($highlight-color, 10%);
+    }
+}
+
 //main styling
 body{
     background-color: white;
@@ -202,14 +213,16 @@ body{
         header{
             padding: 0%; /*20/660*/
             margin-bottom: 5%;
-            display: inline-block;
+            position: fixed;
+            z-index: 2000;
+
             h1{
                 
                 padding: 0 2%;
             }
             nav{
-                width: 51%;
-                display: block;
+                width: 60%;
+                // display: fixed;
                 float: right;
                 ul{
                     width: 100%;
@@ -245,8 +258,10 @@ body{
                 width:100%;
                 // background-color: blue;
                 // padding: 10px 1.515151%; /*10/660*/
-                
-                #all-work{
+                .space{
+                    height: 100px;
+                }
+                #all-work{ 
                     .gallery-item, .gap{
                         width: 25%;
                         .img-title {
