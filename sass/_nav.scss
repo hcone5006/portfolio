@@ -8,10 +8,10 @@ nav{
         a{
             // width: 100%;
             text-decoration: none;
-            color: $light-color;
-            font-size: 20px;
+            color: white;
+            font-size: 18px;
             &:hover, &.selected{
-                color: white;
+                color: lighten($highlight-color, 10%);
             }
         }
         li{
@@ -22,19 +22,19 @@ nav{
             margin:0;
             padding:0;
             height: 100%;
-            color: $light-color;
-            border: 1px solid lighten($dark-color, 10%);
+            color: white;
+            border: 1px solid lighten($dark-color, 30%);
             border-top: none;
             display:block;
             //originally hyperlink styling
             text-decoration: none;
             text-align: center;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 2;
-            font-weight: bold;
+            // font-weight: bold;
             &:hover, &.selected{
-                color: white;
-                background-color: lighten($dark-color, 10%);
+                color: lighten($highlight-color, 10%);
+                background-color: lighten($dark-color, 25%);
             }
             
             &:last-child{

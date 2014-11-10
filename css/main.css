@@ -103,10 +103,10 @@ nav {
     height: 100%; }
     nav ul a {
       text-decoration: none;
-      color: #c4d4cb;
-      font-size: 20px; }
+      color: white;
+      font-size: 18px; }
       nav ul a:hover, nav ul a.selected {
-        color: white; }
+        color: #ec698b; }
     nav ul li {
       cursor: pointer;
       list-style: none;
@@ -114,18 +114,17 @@ nav {
       margin: 0;
       padding: 0;
       height: 100%;
-      color: #c4d4cb;
-      border: 1px solid #4c3f42;
+      color: white;
+      border: 1px solid #717e97;
       border-top: none;
       display: block;
       text-decoration: none;
       text-align: center;
-      font-size: 20px;
-      line-height: 2;
-      font-weight: bold; }
+      font-size: 18px;
+      line-height: 2; }
       nav ul li:hover, nav ul li.selected {
-        color: white;
-        background-color: #4c3f42; }
+        color: #ec698b;
+        background-color: #65728a; }
       nav ul li:last-child {
         border-bottom: 1px solid #ab74ff; }
 
@@ -139,17 +138,18 @@ body {
     width: 100%; }
   body header {
     width: 100%;
-    padding: 0;
-    background-color: #30282a;
+    padding: 0 3%;
+    background-color: #5a667b;
     color: white; }
     body header h1 {
       display: inline-block;
-      padding: 3%;
+      padding: 0;
       margin: 0;
       color: white;
-      font-size: 40px; }
+      font-size: 36px;
+      font-weight: lighter; }
       body header h1:hover {
-        color: #e84167; }
+        color: #ec698b; }
   body main {
     padding: 0;
     background-color: white; }
@@ -172,9 +172,9 @@ body {
           text-align: center;
           position: absolute;
           display: none;
-          background-color: #55665e; }
+          background-color: #454d5d; }
           body main #all-work .gallery-item .img-title h4, body main #all-work .gap .img-title h4 {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: lighter;
             font-family: 'Open Sans', sans-serif;
             position: absolute;
@@ -185,29 +185,33 @@ body {
     body main .panels img {
       width: 100%; }
     body main #about h2 {
-      font-size: 40px;
-      color: #30282a;
+      font-size: 36px;
+      font-weight: lighter;
+      color: #2f3540;
       font-family: "Lobster Two", cursive; }
     body main #about p {
-      color: #30282a; }
+      color: #2f3540; }
     body main #about img {
       width: 100%; }
     body main #about .skills {
-      margin: 0 3% 3% 3%; }
+      margin: 0; }
       body main #about .skills img {
         height: 50px;
         width: auto; }
   body footer {
     padding: 3%;
     /*20/340*/
-    background-color: #4c3f42;
-    color: #c4d4cb; }
+    background-color: #65728a;
+    color: white; }
     body footer img {
       width: 7%;
       text-align: left;
-      margin: 0;
-      padding: 1%;
+      margin: 0 1% 0 0;
+      padding: 0%;
       float: left; }
+      body footer img:hover, body footer img.selected {
+        border-radius: 20px;
+        background-color: #e63c68; }
       body footer img:last-child {
         display: block; }
     body footer p {
@@ -218,7 +222,7 @@ body {
       width: 57%; }
     body footer #top {
       width: 10%;
-      color: #c4d4cb;
+      color: white;
       text-align: right;
       /*display: inline-block;
       position: relative;*/
@@ -228,7 +232,7 @@ body {
       text-decoration: none;
       vertical-align: middle; }
       body footer #top:hover {
-        color: white; }
+        color: #e63c68; }
 
 /* ==========================================================================
    Media Query for Tablet Layout.
@@ -270,14 +274,14 @@ body {
       padding: 0;
       width: 100%; }
       body .wrapper main {
-        padding: 6% 3%;
+        padding: 5.5% 3%;
         width: 94%; }
         body .wrapper main #all-work {
           margin: 3%; }
           body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
             width: 25%; }
             body .wrapper main #all-work .gallery-item .img-title h4, body .wrapper main #all-work .gap .img-title h4 {
-              font-size: 18px; }
+              font-size: 20px; }
         body .wrapper main #about div {
           display: inline-block;
           width: 60%;
@@ -286,26 +290,23 @@ body {
             margin: 0;
             width: 60%;
             padding: 0px;
-            display: inline-block; }
-          body .wrapper main #about div h3 {
-            font-size: 26px;
-            margin: 0;
-            width: 60%;
-            padding: 0px;
-            display: inline-block; }
+            display: inline-block;
+            margin: 1% 0; }
           body .wrapper main #about div p {
             width: 100%;
             margin: 0;
+            line-height: 30px;
             font-size: 18px;
             display: inline-block;
             vertical-align: top; }
           body .wrapper main #about div .skills {
             width: 100%; }
             body .wrapper main #about div .skills img {
+              margin: 0px;
               height: 50px;
               width: auto; }
         body .wrapper main #about img {
-          margin: 3% 3% 3% 0;
+          margin: 0 0 0 3%;
           width: 36%;
           display: inline-block;
           vertical-align: top; }
@@ -314,7 +315,6 @@ body {
         /*20/660*/ }
         body .wrapper footer img {
           width: 4%;
-          padding: 0 1% 0 0;
           float: left; }
         body .wrapper footer p {
           font-size: 14px;

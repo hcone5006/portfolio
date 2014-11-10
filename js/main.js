@@ -8,7 +8,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		$("#about").velocity('scroll',{
 			duration:1000,
-			easing: 'easeInOutQuad'
+			easing: 'easeInOutQuad', offset: -50
 		});
 
 	});
