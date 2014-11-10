@@ -32,9 +32,7 @@ h3, h4, nav a, li{
     font-family: 'Open Sans', sans-serif;
     
 }
-h2, h3{
-    margin: 3%;
-}
+
 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
@@ -126,9 +124,8 @@ body{
         }
         #about{
             h2{
-                margin-bottom: 0; 
                 font-size: 40px;
-                color: $dark-color-2;
+                color: $dark-color;
                 font-family: "Lobster Two", cursive;
             }
             h3{
@@ -152,8 +149,8 @@ body{
     footer{
         padding: 3%; /*20/340*/
         
-        background-color: $light-color;
-        color: white;
+        background-color: lighten($dark-color, 10%);
+        color: $light-color;
         img{
             width: 7%;
             text-align: left;
@@ -173,7 +170,7 @@ body{
         }
         #top{
             width: 10%;
-            color: $medium-color;
+            color: $light-color;
             text-align: right;
             /*display: inline-block;
             position: relative;*/
@@ -201,8 +198,10 @@ body{
         background: white;
         header{
             padding: 0%; /*20/660*/
-            margin-bottom: 5%;
+            height: 56px;
             display: inline-block;
+            position: fixed;
+            z-index: 2000;
             h1{
                 
                 padding: 0 2%;
@@ -211,6 +210,7 @@ body{
                 width: 51%;
                 display: block;
                 float: right;
+
                 ul{
                     width: 100%;
 
@@ -220,8 +220,9 @@ body{
                         margin-right: 5%;
                     }
                     li{
+                        line-height: 55px;
                         float: right;
-                        vertical-align: text-bottom;
+                        /*vertical-align: text-bottom;*/
                         display: inline-block;
                         margin: 0 auto;
                         border: 0px;
@@ -241,12 +242,13 @@ body{
             
         
             main{
-                padding: 0;
-                width:100%;
+                padding: 6% 3%;
+                width:94%;
                 // background-color: blue;
                 // padding: 10px 1.515151%; /*10/660*/
                 
                 #all-work{
+                    margin: 3%;
                     .gallery-item, .gap{
                         width: 25%;
                         .img-title {
@@ -262,17 +264,17 @@ body{
                 #about{
                     div{
                         display: inline-block;
-                        width: 54%;
-                        margin: 3%;
+                        width: 60%;
+                        margin: 0%;
                         h2{
-                            margin: 0px 0px 10px 0px;
+                            margin: 0;
                             width: 60%;
                             padding: 0px;
                             display: inline-block;
                         }
                         h3{
                             font-size: 26px;
-                            margin: 3% 0 10px 0;
+                            margin: 0;
                             width: 60%;
                             padding: 0px;
                             display: inline-block;

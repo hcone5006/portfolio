@@ -85,9 +85,6 @@ h1, h2 {
 h3, h4, nav a, li {
   font-family: 'Open Sans', sans-serif; }
 
-h2, h3 {
-  margin: 3%; }
-
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -97,35 +94,40 @@ p {
 .fancybox-inner img {
   width: 100%; }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  nav ul a {
-    text-decoration: none;
-    color: #c4d4cb;
-    font-size: 20px; }
-    nav ul a:hover, nav ul a.selected {
-      color: white; }
-  nav ul li {
-    cursor: pointer;
+nav {
+  height: 100%; }
+  nav ul {
     list-style: none;
-    display: block;
     margin: 0;
     padding: 0;
-    color: #c4d4cb;
-    border: 1px solid #542733;
-    border-top: none;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    line-height: 2;
-    font-weight: bold; }
-    nav ul li:hover, nav ul li.selected {
-      color: white; }
-    nav ul li:last-child {
-      border-bottom: 1px solid #ab74ff; }
+    height: 100%; }
+    nav ul a {
+      text-decoration: none;
+      color: #c4d4cb;
+      font-size: 20px; }
+      nav ul a:hover, nav ul a.selected {
+        color: white; }
+    nav ul li {
+      cursor: pointer;
+      list-style: none;
+      display: block;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      color: #c4d4cb;
+      border: 1px solid #4c3f42;
+      border-top: none;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      font-size: 20px;
+      line-height: 2;
+      font-weight: bold; }
+      nav ul li:hover, nav ul li.selected {
+        color: white;
+        background-color: #4c3f42; }
+      nav ul li:last-child {
+        border-bottom: 1px solid #ab74ff; }
 
 body {
   background-color: white;
@@ -183,9 +185,8 @@ body {
     body main .panels img {
       width: 100%; }
     body main #about h2 {
-      margin-bottom: 0;
       font-size: 40px;
-      color: #542733;
+      color: #30282a;
       font-family: "Lobster Two", cursive; }
     body main #about p {
       color: #30282a; }
@@ -199,8 +200,8 @@ body {
   body footer {
     padding: 3%;
     /*20/340*/
-    background-color: #c4d4cb;
-    color: white; }
+    background-color: #4c3f42;
+    color: #c4d4cb; }
     body footer img {
       width: 7%;
       text-align: left;
@@ -217,7 +218,7 @@ body {
       width: 57%; }
     body footer #top {
       width: 10%;
-      color: #55665e;
+      color: #c4d4cb;
       text-align: right;
       /*display: inline-block;
       position: relative;*/
@@ -238,8 +239,10 @@ body {
     body header {
       padding: 0%;
       /*20/660*/
-      margin-bottom: 5%;
-      display: inline-block; }
+      height: 56px;
+      display: inline-block;
+      position: fixed;
+      z-index: 2000; }
       body header h1 {
         padding: 0 2%; }
       body header nav {
@@ -253,8 +256,9 @@ body {
             border: 0px;
             margin-right: 5%; }
           body header nav ul li {
+            line-height: 55px;
             float: right;
-            vertical-align: text-bottom;
+            /*vertical-align: text-bottom;*/
             display: inline-block;
             margin: 0 auto;
             border: 0px;
@@ -266,24 +270,26 @@ body {
       padding: 0;
       width: 100%; }
       body .wrapper main {
-        padding: 0;
-        width: 100%; }
-        body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
-          width: 25%; }
-          body .wrapper main #all-work .gallery-item .img-title h4, body .wrapper main #all-work .gap .img-title h4 {
-            font-size: 18px; }
+        padding: 6% 3%;
+        width: 94%; }
+        body .wrapper main #all-work {
+          margin: 3%; }
+          body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
+            width: 25%; }
+            body .wrapper main #all-work .gallery-item .img-title h4, body .wrapper main #all-work .gap .img-title h4 {
+              font-size: 18px; }
         body .wrapper main #about div {
           display: inline-block;
-          width: 54%;
-          margin: 3%; }
+          width: 60%;
+          margin: 0%; }
           body .wrapper main #about div h2 {
-            margin: 0px 0px 10px 0px;
+            margin: 0;
             width: 60%;
             padding: 0px;
             display: inline-block; }
           body .wrapper main #about div h3 {
             font-size: 26px;
-            margin: 3% 0 10px 0;
+            margin: 0;
             width: 60%;
             padding: 0px;
             display: inline-block; }
