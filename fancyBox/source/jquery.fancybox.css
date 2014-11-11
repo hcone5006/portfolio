@@ -54,11 +54,13 @@
 
 .fancybox-inner {
 	overflow: hidden;
+	/*padding: 1%;*/
 }
 /*user added*/
 .fancybox-inner img{
-	width: 100%;
-	max-width: 700px;
+	/*width: 98%;*/
+	margin: 0 auto;
+	max-width: 98%;
 }
 
 .fancybox-caption a, h3{
