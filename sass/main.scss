@@ -19,7 +19,7 @@
 //color scheme
 $dark-color: #2F3540;
 $dark-color-2: #666A73;
-$highlight-color: #E63C68;
+$highlight-color: #FF358B;
 $medium-color: #8C8681;
 $light-color: #D9D1C7;
 
@@ -44,7 +44,11 @@ p{
    max-height: 75vh;
    max-width: 75vw;
    img{
-    margin: 0 auto;
+        max-width: 98%;
+        margin: 1%;
+   }
+   figcaption{
+    margin: 1%;
    }
 }
 
@@ -63,8 +67,8 @@ body{
     }
     header{
         width: 100%;
-        padding: 0 3%;
-        background-color: lighten($dark-color, 20%);
+        padding: 0;
+        background-color: lighten($dark-color, 10%);
         color: white;
         h1{
             display: inline-block;

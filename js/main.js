@@ -23,9 +23,9 @@ $(document).ready(function(){
 
 	$("#top").click(function(e){
 		e.preventDefault();
-		$("#home").velocity('scroll',{
+		$("#all-work").velocity('scroll',{
 			duration:1000,
-			easing: 'easeInOutQuad'
+			easing: 'easeInOutQuad', offset: -80
 		});
 	});
 

@@ -95,7 +95,10 @@ p {
   max-height: 75vh;
   max-width: 75vw; }
   .fancybox-inner figure img {
-    margin: 0 auto; }
+    max-width: 98%;
+    margin: 1%; }
+  .fancybox-inner figure figcaption {
+    margin: 1%; }
 
 nav {
   height: 100%; }
@@ -109,7 +112,7 @@ nav {
       color: white;
       font-size: 18px; }
       nav ul a:hover, nav ul a.selected {
-        color: #ec698b; }
+        color: #ff68a8; }
     nav ul li {
       cursor: pointer;
       list-style: none;
@@ -126,8 +129,8 @@ nav {
       font-size: 18px;
       line-height: 2; }
       nav ul li:hover, nav ul li.selected {
-        color: #ec698b;
-        background-color: #65728a; }
+        color: #ff68a8;
+        background-color: #5a667b; }
       nav ul li:last-child {
         border-bottom: 1px solid #ab74ff; }
 
@@ -141,8 +144,8 @@ body {
     width: 100%; }
   body header {
     width: 100%;
-    padding: 0 3%;
-    background-color: #5a667b;
+    padding: 0;
+    background-color: #454d5d;
     color: white; }
     body header h1 {
       display: inline-block;
@@ -152,7 +155,7 @@ body {
       font-size: 36px;
       font-weight: lighter; }
       body header h1:hover {
-        color: #ec698b; }
+        color: #ff68a8; }
   body main {
     padding: 0;
     background-color: white; }
@@ -214,7 +217,7 @@ body {
       float: left; }
       body footer img:hover, body footer img.selected {
         border-radius: 20px;
-        background-color: #e63c68; }
+        background-color: #ff358b; }
       body footer img:last-child {
         display: block; }
     body footer p {
@@ -235,7 +238,7 @@ body {
       text-decoration: none;
       vertical-align: middle; }
       body footer #top:hover {
-        color: #e63c68; }
+        color: #ff358b; }
 
 /* ==========================================================================
    Media Query for Tablet Layout.

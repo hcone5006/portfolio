@@ -34,7 +34,7 @@ nav{
             // font-weight: bold;
             &:hover, &.selected{
                 color: lighten($highlight-color, 10%);
-                background-color: lighten($dark-color, 25%);
+                background-color: lighten($dark-color, 20%);
             }
             
             &:last-child{
