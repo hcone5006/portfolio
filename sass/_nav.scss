@@ -2,8 +2,8 @@ nav{
     height: 100%;
     ul{
         list-style: none;
-        margin:0;
-        padding:0;
+        margin: 0;
+        padding: 0;
         height: 100%;     
         a{
             // width: 100%;
@@ -14,24 +14,22 @@ nav{
                 color: lighten($highlight-color, 10%);
             }
         }
-        li{
-            
+        li{  
             cursor: pointer;
             list-style: none;
-            display:block;
-            margin:0;
-            padding:0;
+            display: block;
+            margin: 0;
+            padding: 0;
             height: 100%;
             color: white;
             border: 1px solid lighten($dark-color, 30%);
             border-top: none;
-            display:block;
+            display: block;
             //originally hyperlink styling
             text-decoration: none;
             text-align: center;
             font-size: 18px;
             line-height: 2;
-            // font-weight: bold;
             &:hover, &.selected{
                 color: lighten($highlight-color, 10%);
                 background-color: lighten($dark-color, 20%);
@@ -40,7 +38,6 @@ nav{
             &:last-child{
                 border-bottom: 1px solid #ab74ff;
             }
-
         }
     }
 } 
