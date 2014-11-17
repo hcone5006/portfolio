@@ -301,34 +301,37 @@ body {
             width: 25%; }
             body .wrapper main #all-work .gallery-item .img-title h4, body .wrapper main #all-work .gap .img-title h4 {
               font-size: 20px; }
-        body .wrapper main #about div {
-          display: inline-block;
-          width: 60%;
-          margin: 0; }
-          body .wrapper main #about div h2 {
-            margin: 0;
-            width: 60%;
-            padding: 0px;
+        body .wrapper main #about {
+          margin-top: 1%; }
+          body .wrapper main #about div {
             display: inline-block;
-            margin: 1% 0; }
-          body .wrapper main #about div p {
-            width: 100%;
-            margin: 0;
-            line-height: 30px;
-            font-size: 18px;
+            width: 60%;
+            margin: 0; }
+            body .wrapper main #about div h2 {
+              margin: 0 0 3% 0;
+              width: 60%;
+              padding: 0px;
+              display: inline-block;
+              line-height: 30px; }
+            body .wrapper main #about div p {
+              width: 100%;
+              margin: 0 0 3% 0;
+              line-height: 30px;
+              font-size: 18px;
+              display: inline-block;
+              vertical-align: top; }
+            body .wrapper main #about div .skills {
+              margin: 0 0 3% 0;
+              width: 100%; }
+              body .wrapper main #about div .skills img {
+                margin: 0px;
+                height: 50px;
+                width: auto; }
+          body .wrapper main #about img {
+            margin: 0 0 0 3%;
+            width: 36%;
             display: inline-block;
             vertical-align: top; }
-          body .wrapper main #about div .skills {
-            width: 100%; }
-            body .wrapper main #about div .skills img {
-              margin: 0px;
-              height: 50px;
-              width: auto; }
-        body .wrapper main #about img {
-          margin: 0 0 0 3%;
-          width: 36%;
-          display: inline-block;
-          vertical-align: top; }
       body .wrapper footer {
         padding: 3%;
         /*20/660*/ }

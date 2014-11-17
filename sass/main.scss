@@ -274,26 +274,28 @@ body{
                     
                 }
                 #about{
+                    margin-top: 1%;
                     div{
                         display: inline-block;
                         width: 60%;
                         margin: 0;
                         h2{
-                            margin: 0;
+                            margin: 0 0 3% 0;
                             width: 60%;
                             padding: 0px;
                             display: inline-block;
-                            margin: 1% 0;
+                            line-height: 30px;
                         } 
                         p{
                             width: 100%;
-                            margin: 0;
+                            margin: 0 0 3% 0;
                             line-height: 30px;
                             font-size: 18px;
                             display: inline-block;
                             vertical-align: top;
                         }
                         .skills{
+                            margin: 0 0 3% 0;
                             width: 100%;
                             img{
                                 margin: 0px;
