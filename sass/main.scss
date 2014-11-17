@@ -63,11 +63,11 @@ figcaption{
         text-decoration: none;
         color: white;
         background-color: $dark-color;
-        border-radius: 30px;
-        border: 3px solid $dark-color;
+        border-radius: 10px;
+        border: 5px solid $dark-color;
         margin-left: 3%;
         &:hover{
-            color: $highlight-color;
+            color: lighten($highlight-color, 10%);
         }
     }
 }
@@ -121,7 +121,15 @@ body{
                     text-align: center;
                     position: absolute;
                     display: none;
-                    background-color: lighten($dark-color, 20%);
+                    /*background-color: lighten($dark-color, 20%);*/
+                    a{
+                        display: block;
+                        height: 100%;
+                        border: none;
+                        border-radius: 0;
+                        margin: 0;
+                        background-color: lighten($dark-color, 20%);
+                    }
                     h4{
                         font-size: 18px;
                         font-weight: lighter;
@@ -260,7 +268,7 @@ body{
                 padding: 5.5% 3%;
                 width:94%;
                 #all-work{
-                    margin: 3%;
+                    margin: 3% 0;
                     .gallery-item, .gap{
                         width: 25%;
                         .img-title {
