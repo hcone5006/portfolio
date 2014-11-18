@@ -104,9 +104,9 @@ body{
         #all-work{ 
             font-size: 0.000em;
             .gallery-item,.gap{
-                width: 50%;
+                width: 49%;
                 padding: 0;
-                margin: 0 auto;
+                margin: .5%;
                 display: none;
                 position: relative;
                 img{
@@ -265,12 +265,13 @@ body{
             padding:0;
             width:100%;
             main{
-                padding: 5.5% 3%;
+                padding: 50px 3%;
                 width:94%;
                 #all-work{
                     margin: 3% 0;
                     .gallery-item, .gap{
-                        width: 25%;
+                        width: 24.4%;
+                        margin: .3%;
                         .img-title {
                             h4{
                                 font-size: 20px;
@@ -353,19 +354,35 @@ body{
         
     body{
         header{
+            h1{
+                padding: 0;
+            }
             nav{
+                margin-right: 0;
                 width: 37%;
             }
         }
         .wrapper{
-            main{               
+            .max{
+                max-width: 1400px;
+                display: block;
+                margin: 0 auto;
+            }
+            main{
+                padding: 70px 3%;               
                 #all-work{
+                    max-width: 1400px;
+                    display: block;
+                    margin: 1% auto 3%;
                     .gallery-item, .gap{
-                        width: 20%;
+                        width: 19.4%;
+                        margin: .3%;
                     }
                 }
                 #about{
-                    
+                    max-width: 1400px;
+                    display: block;
+                    margin: 1% auto 3%;
                 }
             }
             footer{
