@@ -75,6 +75,8 @@ figcaption{
 //nav styling
 @import "nav";
 
+
+
 //main styling
 body{
     background-color: white;
@@ -103,18 +105,36 @@ body{
         background-color: white;
         #all-work{ 
             font-size: 0.000em;
+            .gallery-item{
+                background-color: $highlight-color;
+                
+                img{
+                    -webkit-filter: grayscale(1);
+                    filter: grayscale(1);
+                    opacity: .8;
+                    &:hover{
+                        opacity: 1;
+                        -webkit-filter: grayscale(0);
+                        filter: grayscale(0);
+                    }
+                }
+            }
             .gallery-item,.gap{
+                
                 width: 49%;
                 padding: 0;
                 margin: .5%;
                 display: none;
                 position: relative;
+                
                 img{
                     width: 100%;
+                    
                 }
                 .img-title{
-                    opacity: .9;
-                    top: 0;
+                    display: none;
+                    opacity: .0;
+                    bottom: 0;
                     margin: 0;
                     height: 100%;
                     width: 100%;
@@ -128,15 +148,16 @@ body{
                         border: none;
                         border-radius: 0;
                         margin: 0;
-                        background-color: lighten($dark-color, 20%);
+                        
                     }
                     h4{
+                        display: none;
                         font-size: 18px;
                         font-weight: lighter;
                         font-family: 'Open Sans', sans-serif;
                         position: absolute;
                         color: white;
-                        top: 33%;
+                        bottom: 0;
                         width: 100%;
                         text-align: center;
                     }
