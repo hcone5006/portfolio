@@ -26,7 +26,7 @@ $highlight-color: #F5354D;
 // font styles
 h1,h2{
     font-family: 'Lobster Two', cursive;
-    
+    font-weight: lighter;
 }
 h3, h4, nav a, li{
     font-family: 'Open Sans', sans-serif;
@@ -62,9 +62,9 @@ figcaption{
         // line-height: 20px;
         text-decoration: none;
         color: white;
-        background-color: $dark-color;
-        border-radius: 10px;
-        border: 5px solid $dark-color;
+        background-color: lighten($dark-color, 20%);
+        border-radius: 20px;
+        border: 8px solid lighten($dark-color, 20%);
         margin-left: 3%;
         &:hover{
             color: lighten($highlight-color, 10%);
@@ -95,12 +95,20 @@ body{
             margin: 0;
             color: lighten($highlight-color, 10%);
             font-size: 36px;
-            font-weight: lighter;
+            /*font-weight: lighter;*/
         }
     }
     main{
         padding: 3%;
         background-color: white;
+        .title{
+            width: 100%;
+            display: block;
+            margin: 3% auto;
+            text-align: center;
+            font-size: 30px;
+            color: lighten($dark-color, 20%);
+        }
         #all-work{ 
             font-size: 0.000em;
             .gallery-item,.gap{
@@ -164,6 +172,32 @@ body{
                 width: 100%;
                 margin: 3% 0;
             }
+            .contact{
+                margin: 0 3% 0 0;
+                width: 100%;
+                a{
+                    width: 50px;
+                    height: 50px;
+                    // line-height: 20px;
+                    text-decoration: none;
+                    color: white;
+                    background-color: lighten($dark-color, 20%);
+                    border-radius: 20px;
+                    border: 8px solid lighten($dark-color, 20%);
+                    margin-left: 0%;
+                    &:hover{
+                        color: lighten($highlight-color, 10%);
+                    }
+                    img{
+                        height: 50px;
+                        width: 50px; 
+                        &:hover, &.selected{
+                        border-radius: 30px;
+                        background-color: lighten($highlight-color, 10%);
+                        }
+                    }
+                }
+            }
             .skills{
                 margin: 0;
                 img{
@@ -184,8 +218,8 @@ body{
             padding: 0%;
             float: left;
             &:hover, &.selected{
-                border-radius: 20px;
-                background-color: $highlight-color;
+                border-radius: 30px;
+                background-color: lighten($highlight-color, 10%);
             }
             &:last-child{
                 display: block;
@@ -208,7 +242,7 @@ body{
             text-decoration: none;
             vertical-align: middle;
             &:hover{
-                color: $highlight-color;
+                color: lighten($highlight-color, 10%);
             }
         }
     }
@@ -302,6 +336,10 @@ body{
                             font-size: 18px;
                             display: inline-block;
                             vertical-align: top;
+                        }
+                        .contact{
+                            width: 100%;
+                            margin-bottom: 3%;
                         }
                         .skills{
                             margin: 0 0 3% 0;

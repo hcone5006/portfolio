@@ -80,7 +80,8 @@ textarea {
    Default Mobile First Styles
    ========================================================================== */
 h1, h2 {
-  font-family: 'Lobster Two', cursive; }
+  font-family: 'Lobster Two', cursive;
+  font-weight: lighter; }
 
 h3, h4, nav a, li {
   font-family: 'Open Sans', sans-serif; }
@@ -107,9 +108,9 @@ figcaption a {
   height: 50px;
   text-decoration: none;
   color: white;
-  background-color: #1a1718;
-  border-radius: 10px;
-  border: 5px solid #1a1718;
+  background-color: #50474a;
+  border-radius: 20px;
+  border: 8px solid #50474a;
   margin-left: 3%; }
   figcaption a:hover {
     color: #f76678; }
@@ -166,10 +167,17 @@ body {
       margin: 0;
       color: #f76678;
       font-size: 36px;
-      font-weight: lighter; }
+      /*font-weight: lighter;*/ }
   body main {
     padding: 3%;
     background-color: white; }
+    body main .title {
+      width: 100%;
+      display: block;
+      margin: 3% auto;
+      text-align: center;
+      font-size: 30px;
+      color: #50474a; }
     body main #all-work {
       font-size: 0.000em; }
       body main #all-work .gallery-item, body main #all-work .gap {
@@ -220,6 +228,26 @@ body {
     body main #about img {
       width: 100%;
       margin: 3% 0; }
+    body main #about .contact {
+      margin: 0 3% 0 0;
+      width: 100%; }
+      body main #about .contact a {
+        width: 50px;
+        height: 50px;
+        text-decoration: none;
+        color: white;
+        background-color: #50474a;
+        border-radius: 20px;
+        border: 8px solid #50474a;
+        margin-left: 0%; }
+        body main #about .contact a:hover {
+          color: #f76678; }
+        body main #about .contact a img {
+          height: 50px;
+          width: 50px; }
+          body main #about .contact a img:hover, body main #about .contact a img.selected {
+            border-radius: 30px;
+            background-color: #f76678; }
     body main #about .skills {
       margin: 0; }
       body main #about .skills img {
@@ -237,8 +265,8 @@ body {
       padding: 0%;
       float: left; }
       body footer img:hover, body footer img.selected {
-        border-radius: 20px;
-        background-color: #f5354d; }
+        border-radius: 30px;
+        background-color: #f76678; }
       body footer img:last-child {
         display: block; }
     body footer p {
@@ -257,7 +285,7 @@ body {
       text-decoration: none;
       vertical-align: middle; }
       body footer #top:hover {
-        color: #f5354d; }
+        color: #f76678; }
 
 /* ==========================================================================
    Media Query for Tablet Layout.
@@ -328,6 +356,9 @@ body {
               font-size: 18px;
               display: inline-block;
               vertical-align: top; }
+            body .wrapper main #about div .contact {
+              width: 100%;
+              margin-bottom: 3%; }
             body .wrapper main #about div .skills {
               margin: 0 0 3% 0;
               width: 100%; }
