@@ -120,10 +120,14 @@ body{
                 }
             }
             .gallery-item,.gap{
+<<<<<<< HEAD
                 
                 width: 49%;
+=======
+                width: 50%;
+>>>>>>> parent of baa388e... Margins & cv added
                 padding: 0;
-                margin: .5%;
+                margin: 0 auto;
                 display: none;
                 position: relative;
                 
@@ -286,13 +290,12 @@ body{
             padding:0;
             width:100%;
             main{
-                padding: 50px 3%;
+                padding: 5.5% 3%;
                 width:94%;
                 #all-work{
                     margin: 3% 0;
                     .gallery-item, .gap{
-                        width: 24.4%;
-                        margin: .3%;
+                        width: 25%;
                         .img-title {
                             h4{
                                 font-size: 20px;
@@ -375,35 +378,19 @@ body{
         
     body{
         header{
-            h1{
-                padding: 0;
-            }
             nav{
-                margin-right: 0;
                 width: 37%;
             }
         }
         .wrapper{
-            .max{
-                max-width: 1400px;
-                display: block;
-                margin: 0 auto;
-            }
-            main{
-                padding: 70px 3%;               
+            main{               
                 #all-work{
-                    max-width: 1400px;
-                    display: block;
-                    margin: 1% auto 3%;
                     .gallery-item, .gap{
-                        width: 19.4%;
-                        margin: .3%;
+                        width: 20%;
                     }
                 }
                 #about{
-                    max-width: 1400px;
-                    display: block;
-                    margin: 1% auto 3%;
+                    
                 }
             }
             footer{

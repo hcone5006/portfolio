@@ -183,9 +183,9 @@ body {
             -webkit-filter: grayscale(0);
             filter: grayscale(0); }
       body main #all-work .gallery-item, body main #all-work .gap {
-        width: 49%;
+        width: 50%;
         padding: 0;
-        margin: .5%;
+        margin: 0 auto;
         display: none;
         position: relative; }
         body main #all-work .gallery-item img, body main #all-work .gap img {
@@ -311,13 +311,12 @@ body {
       padding: 0;
       width: 100%; }
       body .wrapper main {
-        padding: 50px 3%;
+        padding: 5.5% 3%;
         width: 94%; }
         body .wrapper main #all-work {
           margin: 3% 0; }
           body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
-            width: 24.4%;
-            margin: .3%; }
+            width: 25%; }
             body .wrapper main #all-work .gallery-item .img-title h4, body .wrapper main #all-work .gap .img-title h4 {
               font-size: 20px; }
         body .wrapper main #about {
@@ -371,28 +370,10 @@ body {
    Media Query for Desktop.
    ========================================================================== */
 @media only screen and (min-width: 1000px) {
-  body header h1 {
-    padding: 0; }
   body header nav {
-    margin-right: 0;
     width: 37%; }
-  body .wrapper .max {
-    max-width: 1400px;
-    display: block;
-    margin: 0 auto; }
-  body .wrapper main {
-    padding: 70px 3%; }
-    body .wrapper main #all-work {
-      max-width: 1400px;
-      display: block;
-      margin: 1% auto 3%; }
-      body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
-        width: 19.4%;
-        margin: .3%; }
-    body .wrapper main #about {
-      max-width: 1400px;
-      display: block;
-      margin: 1% auto 3%; }
+  body .wrapper main #all-work .gallery-item, body .wrapper main #all-work .gap {
+    width: 20%; }
   body .wrapper footer {
     /*20/660*/ }
     body .wrapper footer img {
