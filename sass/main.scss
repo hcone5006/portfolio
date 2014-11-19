@@ -75,8 +75,6 @@ figcaption{
 //nav styling
 @import "nav";
 
-
-
 //main styling
 body{
     background-color: white;
@@ -105,44 +103,18 @@ body{
         background-color: white;
         #all-work{ 
             font-size: 0.000em;
-            .gallery-item{
-                background-color: $highlight-color;
-                
-                img{
-                    -webkit-filter: grayscale(1);
-                    filter: grayscale(1);
-                    opacity: .8;
-                    &:hover{
-                        opacity: 1;
-                        -webkit-filter: grayscale(0);
-                        filter: grayscale(0);
-                    }
-                }
-            }
             .gallery-item,.gap{
-<<<<<<< HEAD
-<<<<<<< HEAD
-                
                 width: 49%;
-=======
-                width: 50%;
->>>>>>> parent of baa388e... Margins & cv added
-=======
-                width: 50%;
->>>>>>> parent of baa388e... Margins & cv added
                 padding: 0;
-                margin: 0 auto;
+                margin: .5%;
                 display: none;
                 position: relative;
-                
                 img{
                     width: 100%;
-                    
                 }
                 .img-title{
-                    display: none;
-                    opacity: .0;
-                    bottom: 0;
+                    opacity: .9;
+                    top: 0;
                     margin: 0;
                     height: 100%;
                     width: 100%;
@@ -156,16 +128,15 @@ body{
                         border: none;
                         border-radius: 0;
                         margin: 0;
-                        
+                        background-color: lighten($dark-color, 20%);
                     }
                     h4{
-                        display: none;
                         font-size: 18px;
                         font-weight: lighter;
                         font-family: 'Open Sans', sans-serif;
                         position: absolute;
                         color: white;
-                        bottom: 0;
+                        top: 33%;
                         width: 100%;
                         text-align: center;
                     }
@@ -294,12 +265,13 @@ body{
             padding:0;
             width:100%;
             main{
-                padding: 5.5% 3%;
+                padding: 50px 3%;
                 width:94%;
                 #all-work{
                     margin: 3% 0;
                     .gallery-item, .gap{
-                        width: 25%;
+                        width: 24.4%;
+                        margin: .3%;
                         .img-title {
                             h4{
                                 font-size: 20px;
@@ -382,19 +354,35 @@ body{
         
     body{
         header{
+            h1{
+                padding: 0;
+            }
             nav{
+                margin-right: 0;
                 width: 37%;
             }
         }
         .wrapper{
-            main{               
+            .max{
+                max-width: 1400px;
+                display: block;
+                margin: 0 auto;
+            }
+            main{
+                padding: 70px 3%;               
                 #all-work{
+                    max-width: 1400px;
+                    display: block;
+                    margin: 1% auto 3%;
                     .gallery-item, .gap{
-                        width: 20%;
+                        width: 19.4%;
+                        margin: .3%;
                     }
                 }
                 #about{
-                    
+                    max-width: 1400px;
+                    display: block;
+                    margin: 1% auto 3%;
                 }
             }
             footer{
