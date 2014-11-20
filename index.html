@@ -24,31 +24,25 @@
                 <nav>
                   <ul>
                     <li><a href="#about">About</a></li>
-                    <li class="filter" data-filter=".art">Artist</li>
-                    <li class="filter" data-filter=".teach">Educator</li>
-                    <li class="filter" data-filter=".design">Front-End Developer</li>
-                    <li class="filter" data-filter="all">All</li>
+                    <li class="filter" data-filter=".art">Art</li>
+                    <li class="filter" data-filter=".teach">Education</li>
+                    <li class="filter" data-filter=".design">Web Design</li>
+                    <!-- <li class="filter" data-filter="all">All</li> -->
                   </ul>
                 </nav>
               </div>
             </header>
+
+            <div class="title">
+              <h3>The Sassy Front-End</h3> <h3>Developer</h3>
+            </div>
             
             <main class="clearfix">
               <!-- clickable thumbnails of all the work -->
-              <h3 class="title">Front-End Developer / Artist / Educator</h3>
-
+              
               <div id="all-work" class="clearfix">
 
-                <figure class="gallery-item mix art">
-                  <img src="img/square-sketchbook.jpg" alt="sketchbook drawing">
-                    <figcaption class="img-title">
-                      <a href="#sketch" class="fancybox" data-fancybox-group="art">
-                        <h4>Sketchbook Drawing</h4>
-                      </a>
-                    </figcaption>
-                </figure>
-
-                <figure class="gallery-item mix design">
+                <figure class="gallery-item mix design" data-myorder="1">
                   <img src="img/square-kinder.png" alt="">
                     <figcaption class="img-title">
                       <a href="#kinder" class="fancybox" data-fancybox-group="design">
@@ -56,8 +50,6 @@
                       </a>
                     </figcaption>
                 </figure>
-
-
 
                 <figure class="gallery-item mix art">
                   <img src="img/square-inkwash.jpg" alt="ink wash painting">
@@ -78,13 +70,22 @@
                 </figure>                
 
                 <figure class="gallery-item mix art">
+                  <img src="img/square-sketchbook.jpg" alt="sketchbook drawing">
+                    <figcaption class="img-title">
+                      <a href="#sketch" class="fancybox" data-fancybox-group="art">
+                        <h4>Sketchbook Drawing</h4>
+                      </a>
+                    </figcaption>
+                </figure>
+
+                <!-- <figure class="gallery-item mix art">
                   <img src="img/square-sketchbook2.jpg" alt="sketchbook drawing">
                     <figcaption class="img-title">
                       <a href="#sketch2" class="fancybox" data-fancybox-group="art">
                         <h4>Sketchbook Drawing</h4>
                       </a>
                     </figcaption>
-                </figure>
+                </figure> -->
 
                 <figure class="gallery-item mix art">
                   <img src="img/square-angel.png" alt="angel">
@@ -95,20 +96,20 @@
                     </figcaption>
                 </figure>
 
-                <figure class="gallery-item mix design">
-                  <img src="img/square-tablet-design.png" alt="latinissimo">
-                    <figcaption class="img-title">
-                      <a href="#latin-wireframe" class="fancybox" data-fancybox-group="design">
-                        <h4>Latinissimo Wireframes</h4>
-                      </a>
-                    </figcaption>
-                </figure>
-
                 <figure class="gallery-item mix teach">
                   <img src="img/square-artclass5.jpg" alt="teach class">
                     <figcaption class="img-title">
                       <a href="#class5" class="fancybox" data-fancybox-group="teach">
                         <h4>Art Class, Mixing Colors</h4>
+                      </a>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item mix design">
+                  <img src="img/square-tablet-design.png" alt="latinissimo">
+                    <figcaption class="img-title">
+                      <a href="#latin-wireframe" class="fancybox" data-fancybox-group="design">
+                        <h4>Latinissimo Wireframes</h4>
                       </a>
                     </figcaption>
                 </figure>
@@ -257,14 +258,14 @@
                     </figcaption>
                 </figure>
 
-                <!-- <figure class="gallery-item mix design">
+                <figure class="gallery-item mix design">
                   <img src="img/square-danceshop.png" alt="dance shop">
                     <figcaption class="img-title">
                       <a href="#shop" class="fancybox" data-fancybox-group="design">
                         <h4>First Website</h4>
                       </a>
                     </figcaption>
-                </figure> -->
+                </figure>
 
                 <figure class="gallery-item mix teach">
                   <img src="img/square-winterfest.jpg" alt="Winter Art Festival">
@@ -542,10 +543,10 @@
 
                     <div class="contact">
 
-                      <a href="http://nz.linkedin.com/pub/heidi-cone/26/82b/3b" target="_blank"><h3>Linked In</h3></a>
-                      <a href="http://heidi-c.dmlive.co.nz/blog/" target="_blank"><h3>WordPress Blog</h3></a>
-                      <a href="http://vizualize.me/HeidiCone" target="blank"><h3>CV</h3></a>
-                      <a href="mailto:heidicone@gmail.com" target="_blank"><h3>Email</h3></a>
+                      <button><a href="http://nz.linkedin.com/pub/heidi-cone/26/82b/3b" target="_blank"><h3>Linked In</h3></a></button>
+                      <button><a href="http://heidi-c.dmlive.co.nz/blog/" target="_blank"><h3>WordPress Blog</h3></a></button>
+                      <button><a href="http://vizualize.me/HeidiCone" target="blank"><h3>CV</h3></a></button>
+                      <button><a href="mailto:heidicone@gmail.com" target="_blank"><h3>Email</h3></a></button> 
 
                       <!-- <a href="http://nz.linkedin.com/pub/heidi-cone/26/82b/3b" target="_blank"><img src="img/linked.png" alt="Linked In"></a>
                       <a href="http://heidi-c.dmlive.co.nz/blog/" target="_blank"><img src="img/wordpress18.png" alt="wordpress"></a>
