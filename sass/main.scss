@@ -101,7 +101,7 @@ body{
     .title{
         background-image: url("headerimage.png");
         background-color: lighten($highlight-color, 10%);
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-position: center 0px;
         background-size: auto 100%;
         background-repeat: no-repeat;
@@ -110,13 +110,19 @@ body{
         // height: 330px;
         display: block;
         h3{
-            // margin: 0 auto;
+            display: block;
+            margin: 0 auto;
             text-align: center;
             font-size: 40px;
-            line-height: 38px;
+            line-height: 58px;
             color: white;
             font-weight: lighter;
-            padding: 18% 0 4% 0;
+            &:first-child{
+                padding: 18% 0 0 0;
+            }
+            &:last-child{
+                padding: 0 0 20% 0;
+            }
         }
     }
     main{
@@ -124,6 +130,10 @@ body{
         background-color: white;
         #all-work{ 
             font-size: 0.000em;
+            .gallery-item{
+                background-color: lighten($highlight-color, 10%);
+                opacity: .9;
+            }
             .gallery-item,.gap{
                 width: 49%;
                 padding: 0;
@@ -131,13 +141,21 @@ body{
                 display: none;
                 position: relative;
                 img{
+                    opacity: .8;
+                    -webkit-filter: grayscale(1);
+                    filter: grayscale(1);
                     width: 100%;
+                    &:hover{
+                        -webkit-filter: grayscale(0);
+                        filter: grayscale(0);
+                        opacity: 1;
+                    }
                 }
                 .img-title{
                     opacity: .9;
-                    top: 0;
+                    bottom: 0;
                     margin: 0;
-                    height: 100%;
+                    height: 15%;
                     width: 100%;
                     text-align: center;
                     position: absolute;
@@ -149,17 +167,19 @@ body{
                         border: none;
                         border-radius: 0;
                         margin: 0;
-                        background-color: lighten($dark-color, 20%);
+                        // background-color: lighten($dark-color, 20%);
                     }
                     h4{
+                        margin: 5px;
                         font-size: 18px;
                         font-weight: lighter;
                         font-family: 'Open Sans', sans-serif;
                         position: absolute;
                         color: white;
-                        top: 33%;
+                        // background-color: lighten($dark-color, 20%);
                         width: 100%;
                         text-align: center;
+                        bottom: 0;
                     }
                 }    
             }
@@ -315,6 +335,7 @@ body{
                 padding: 18% 0 24% 0;
                 font-size: 60px;
                 text-align: center;
+                line-height: 48px;
             }    
         }
         .wrapper{
