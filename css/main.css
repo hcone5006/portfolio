@@ -171,7 +171,7 @@ body {
     background-color: #f76678;
     background-attachment: fixed;
     background-position: center 0px;
-    background-size: auto 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: 200%;
     min-width: 100%;
@@ -194,8 +194,8 @@ body {
     body main #all-work {
       font-size: 0.000em; }
       body main #all-work .gallery-item {
-        background-color: #f76678;
-        opacity: .9; }
+        background-color: #f5354d;
+        opacity: .9999; }
       body main #all-work .gallery-item, body main #all-work .gap {
         width: 49%;
         padding: 0;
@@ -203,12 +203,14 @@ body {
         display: none;
         position: relative; }
         body main #all-work .gallery-item img, body main #all-work .gap img {
-          opacity: .8;
+          opacity: .9;
           -webkit-filter: grayscale(1);
+          -moz-filter: grayscale(1);
           filter: grayscale(1);
           width: 100%; }
           body main #all-work .gallery-item img:hover, body main #all-work .gap img:hover {
             -webkit-filter: grayscale(0);
+            -moz-filter: grayscale(0);
             filter: grayscale(0);
             opacity: 1; }
         body main #all-work .gallery-item .img-title, body main #all-work .gap .img-title {
@@ -350,7 +352,7 @@ body {
       padding: 18% 0 24% 0;
       font-size: 60px;
       text-align: center;
-      line-height: 48px; }
+      line-height: 54px; }
     body .wrapper {
       margin: 0;
       padding: 0;

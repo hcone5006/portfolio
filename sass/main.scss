@@ -103,7 +103,7 @@ body{
         background-color: lighten($highlight-color, 10%);
         background-attachment: fixed;
         background-position: center 0px;
-        background-size: auto 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         background-size: 200%;
         min-width: 100%;
@@ -131,8 +131,8 @@ body{
         #all-work{ 
             font-size: 0.000em;
             .gallery-item{
-                background-color: lighten($highlight-color, 10%);
-                opacity: .9;
+                background-color: $highlight-color;
+                opacity: .9999;
             }
             .gallery-item,.gap{
                 width: 49%;
@@ -141,12 +141,14 @@ body{
                 display: none;
                 position: relative;
                 img{
-                    opacity: .8;
+                    opacity: .9;
                     -webkit-filter: grayscale(1);
+                    -moz-filter: grayscale(1);
                     filter: grayscale(1);
                     width: 100%;
                     &:hover{
                         -webkit-filter: grayscale(0);
+                        -moz-filter: grayscale(0);
                         filter: grayscale(0);
                         opacity: 1;
                     }
@@ -335,7 +337,7 @@ body{
                 padding: 18% 0 24% 0;
                 font-size: 60px;
                 text-align: center;
-                line-height: 48px;
+                line-height: 54px;
             }    
         }
         .wrapper{
