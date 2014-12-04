@@ -4,7 +4,25 @@ $(document).ready(function(){
 		$('#all-work').mixItUp();
 	});
 
-	$("li a").click(function(e){
+	$("#about-link").click(function(){
+		// e.preventDefault();
+		$("#about").velocity('scroll',{
+			duration:1000,
+			easing: 'easeInOutQuad', offset: -60
+		});
+
+	});
+
+	$("#portfolio-link").click(function(){
+		// e.preventDefault();
+		$("#portfolio").velocity('scroll',{
+			duration:1000,
+			easing: 'easeInOutQuad', offset: -60
+		});
+
+	});
+
+	$("header h1").click(function(e){
 		e.preventDefault();
 		$("#about").velocity('scroll',{
 			duration:1000,
@@ -12,18 +30,10 @@ $(document).ready(function(){
 		});
 
 	});
-	$("header h1").click(function(e){
-		e.preventDefault();
-		$("#about").velocity('scroll',{
-			duration:1000,
-			easing: 'easeInOutQuad'
-		});
-
-	});
 
 	$("#top").click(function(e){
 		e.preventDefault();
-		$("#all-work").velocity('scroll',{
+		$(".title").velocity('scroll',{
 			duration:1000,
 			easing: 'easeInOutQuad', offset: -80
 		});
